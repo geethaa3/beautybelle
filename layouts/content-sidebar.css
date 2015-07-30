@@ -4,17 +4,22 @@ Layout: Content-Sidebar
 */
 
 .content-area {
-	float: left;
-	margin: 0 -25% 0 0;
 	width: 100%;
+	float: left;
+	margin-left: -380px;
+	padding-left: 380px;
 }
 .site-main {
-	margin: 0 25% 0 0;
+	
+	background: #FADB7F;
 }
 .site-content .widget-area {
+	width: 380px;
 	float: right;
-	overflow: hidden;
-	width: 25%;
+	padding: 4rem;
+	background: #FFF;
+	
+
 }
 .site-footer {
 	clear: both;
