@@ -284,7 +284,10 @@ h3,
 h4,
 h5,
 h6 {
-	clear: both;
+	clear: right;
+	font-weight: 600;
+	font-family: 'Architects Daughter', sans-serif;
+	color: #BF345E;
 }
 
 p {
