@@ -45,7 +45,11 @@
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 			<?php beautybelle_social_menu(); ?>
 		</nav><!-- #site-navigation -->
+		<div id="search-container" class="search-box-wrapper clear">
+			<div class="search-box clear">
 		<?php get_search_form (); ?>
+			</div>
+		</div>
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
