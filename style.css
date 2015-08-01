@@ -8,7 +8,7 @@ Version: 1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: beautybelle
-Tags:
+Tags: right sidebar, responsive-layout
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
@@ -273,7 +273,7 @@ input,
 select,
 textarea {
 	color: #404040;
-	font-family: 'The Girl Next Door', serif;
+	font-family: 'Architects Daughter', sans-serif;
 	font-size: 16px;
 	font-size: 1rem;
 	line-height: 1.5;
@@ -287,7 +287,7 @@ h5,
 h6 {
 	clear: right;
 	font-weight: 600;
-	font-family: 'Architects Daughter', sans-serif;
+	font-family: 'The Girl Next Door', serif;
 	color: #BF345E;
 }
 
@@ -561,7 +561,7 @@ a:active {
     display: none;
     float: left;
     padding: 0;
-    background: #FF6666;
+    background: #FFD273;
 }
 .main-navigation ul ul ul {
     left: 100%;
@@ -575,13 +575,13 @@ a:active {
 .main-navigation li:hover > a {
     color: #fff;
     color: hsl(0, 0%, 100%);
-    background: #FFCCCC;
+    background: #FFD273;
 
 }
 .main-navigation ul ul :hover > a {
 }
 .main-navigation ul ul a:hover {
-    background: #FFCCCC;
+    background: #FFD273;
 
 }
 .main-navigation ul li:hover > ul {
@@ -655,7 +655,7 @@ a:active {
 
 .menu-social li a[href*="instagram.com"]::before { content: '\f16d'; }
 
-/** This allows for the social menu to be responsive to the layout. The media query allows social media icon display and links to be positioned absolute, meaning fixated onto the screen when the browser dimensions are stretched or condensed. The social meny is to be positioned on the right hand side,  */
+
 @media screen and (max-width: 600px) {
     #menu-social ul {
 	    position: absolute;
@@ -692,6 +692,7 @@ a:active {
 	width: 50%;
 }
 
+
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
@@ -702,6 +703,7 @@ a:active {
 	height: 1px;
 	width: 1px;
 	overflow: hidden;
+	right: 0;
 }
 
 .screen-reader-text:focus {
@@ -834,7 +836,85 @@ a:active {
     color: #FFFFFF;
 }
                 
-             
+
+
+/* Header search */
+
+.search-toggle {
+    float: right;
+    width: 54px;
+    height: 54px;
+    padding: 12px;
+    margin-right: 20px;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+}
+
+.search-toggle:hover,
+.search-toggle.active {
+    background: #FFCCCC;
+
+}
+
+
+@media screen and (max-width: 600px) {
+    .search-toggle {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-right: 0;
+    }
+}
+
+
+input[type="search"] {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.search-box-wrapper {
+    z-index: 2;
+    width: 100%;
+    display: none;
+}
+
+.search-box {
+    padding: 0.7em;
+    background: #FF9999;
+}
+
+.search-box .search-field {
+    max-width: 362px;
+    float: right;
+    padding: 0.1rem 0.5rem 0.1rem 2rem;
+    font-size: 13px;
+    font-size: 1.3rem;
+    background-color: #fff;
+    border: 0;
+    font-family: 'Architects Daughter', sans-serif;
+}
+
+.error404 .search-submit,
+.search .search-submit,
+.search-box .search-submit { 
+    display: none; 
+}
+           
+
+/* Header is responsive to the website */
+@media screen and (max-width: 600px) {
+    .site-branding { padding: 0; }
+    
+    .title-box {
+        max-width: 100%;
+        margin: 0;
+        padding: 4rem;
+        border: none;
+    }
+}
+            
+
 
 /*--------------------------------------------------------------
 # Widgets
@@ -852,6 +932,7 @@ a:active {
 .widget_search .search-submit {
 	display: none;
 }
+
 
 /*--------------------------------------------------------------
 # Content
