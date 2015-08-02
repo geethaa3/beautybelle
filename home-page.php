@@ -21,9 +21,10 @@ get_header(); ?>
 						'posts_per_page'    => -1            //  show all posts
 					);
 											
-					//Finally set the arguments for my query to show only 5 posts, from category 'Markup', in an ascending order
-					$args=array ('showposts' =>5, 'order'=> 'ASC', 'cat'=>32);
+					//set the arguments for my query to show only 4 posts, from category 'Markup', in an ascending order
+					$args=array ('showposts' =>4, 'order'=> 'ASC', 'cat'=>32);
 					$my_query= new WP_Query($args);
+					
 				//loop for my posts starts here
 					 if ($my_query->have_posts()) {
 					 $c = 1;     // counter
