@@ -30,7 +30,7 @@ function cd_settings_init() {
 	
 	function cd_textarea_field_render() { $options=get_option( 'cd_options_settings' );?><textarea cols="40"rows="5"name="cd_options_settings[cd_textarea_field]"><?phpif (isset($options['cd_textarea_field'])) echo $options['cd_textarea_field']; ?></textarea><?php }
 	
-	function cd_select_field_render() { $options=get_option( 'cd_options_settings' );?><select name="cd_options_settings[cd_select_field]"><option value="1"<?php if (isset($options['cd_select_field'])) selected( $options['cd_select_field'], 1 ); ?>>Option 1</option><option value="2"<?phpif (isset($options['cd_select_field'])) selected( $options['cd_select_field'], 2 ); ?>>Option 2</option></select> <?php }
+	function cd_select_field_render() { $options=get_option( 'cd_options_settings' );?><select name="cd_options_settings[cd_select_field]"><option value="1"<?php if (isset($options['cd_select_field'])) selected( $options['cd_select_field'], 1 ); ?>> Option 1 </option><option value="2"<?phpif (isset($options['cd_select_field'])) selected( $options['cd_select_field'], 2 ); ?>> Option 2 </option></select> <?php }
 	
 	}
 
