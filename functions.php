@@ -162,5 +162,5 @@ require get_template_directory() . '/inc/customizer.php';
  */
 require get_template_directory() . '/inc/jetpack.php';
 
-// Call the file that controls the theme options
+// Call the file that controls the theme options page
 require get_stylesheet_directory() .'/inc/options.php';
