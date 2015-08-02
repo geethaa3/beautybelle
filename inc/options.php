@@ -7,19 +7,30 @@ function cd_add_submenu() {add_submenu_page( 'options-general.php', 'Submenu', '
 function cd_add_admin_menu(){ add_menu_page( 'My Options Page', 'My Options Page', 'manage_options', 'my_options_page', 'my_theme_options_page', 'dashicons-hammer', 66 );}
 add_action( 'admin_menu', 'cd_add_admin_menu' );
 
+//creates our settings
 function cd_settings_init() { 
+	//registering that setting
 	register_setting( 'theme_options', 'cd_options_settings' );
-
+	
+	//adds a settings section within
 	add_settings_section('cd_options_page_section', __( 'Your section description', 'codediva' ), 'cd_options_page_section_callback', 'theme_options');
 	
+	//describes our section
 	function cd_options_page_section_callback() { echo __( 'A description and detail about the section.', 'codediva' );}
-
+	
+	//adds a text box as settings field
 	add_settings_field( 'cd_text_field', __('Enter your text', 'codediva'), 'cd_text_field_render', 'theme_options', 'cd_options_page_section');
 	
+	//adds a check box as settings field
 	add_settings_field( 'cd_checkbox_field', __( 'Check your preference', 'codediva' ), 'cd_checkbox_field_render', 'theme_options', 'cd_options_page_section');
 	
+	//adds a radio button as settings field
 	add_settings_field( 'cd_radio_field', __( 'Choose an option', 'codediva' ), 'cd_radio_field_render', 'theme_options', 'cd_options_page_section');
 	
+	//adds a text area as settings field
+	add_settings_field( 'cd_textarea_field', __( 'Enter content in the textarea', 'codediva' ), 'cd_textarea_field_render', 'theme_options', 'cd_options_page_section');
+	
+	//adds a select box as settings field
 	add_settings_field( 'cd_select_field', __( 'Choose from the dropdown', 'codediva' ), 'cd_select_field_render', 'theme_options', 'cd_options_page_section');
 	
 	function cd_text_field_render() { $options=get_option( 'cd_options_settings' );?><input type="text" name="cd_options_settings[cd_text_field]" value= "<?php if (isset($options['cd_text_field'])) echo $options['cd_text_field']; ?>" >
