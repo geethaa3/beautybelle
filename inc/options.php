@@ -22,16 +22,17 @@ function cd_settings_init() {
 	
 	add_settings_field( 'cd_select_field', __( 'Choose from the dropdown', 'codediva' ), 'cd_select_field_render', 'theme_options', 'cd_options_page_section');
 	
-	function cd_text_field_render() { $options=get_option( 'cd_options_settings' );?><input type="text"name="cd_options_settings[cd_text_field]"value="<?php if (isset($options['cd_text_field'])) echo $options['cd_text_field']; ?>">
+	function cd_text_field_render() { $options=get_option( 'cd_options_settings' );?><input type="text" name="cd_options_settings[cd_text_field]" value= "<?php if (isset($options['cd_text_field'])) echo $options['cd_text_field']; ?>" >
 	<?php }
 
-	function cd_checkbox_field_render() { $options=get_option( 'cd_options_settings' );?><input type="checkbox"name="cd_options_settings[cd_checkbox_field]"<?php if (isset($options['cd_checkbox_field'])) checked( $options['cd_checkbox_field'], 1); ?>value= "1"> 
+	function cd_checkbox_field_render() { $options=get_option( 'cd_options_settings' );?><input type="checkbox" name="cd_options_settings[cd_checkbox_field]" <?php if (isset($options['cd_checkbox_field'])) checked( $options['cd_checkbox_field'], 1); ?> value= "1" > 
 	<?php }
 	
-	function cd_radio_field_render() { $options=get_option( 'cd_options_settings' );?><input type="radio"name="cd_options_settings[cd_radio_field]"<?php if (isset($options['cd_radio_field'])) checked( $options['cd_radio_field'], 1 ); ?>value="1">
+	function cd_radio_field_render() { $options=get_option( 'cd_options_settings' );?><input type="radio" name="cd_options_settings[cd_radio_field]" <?php if (isset($options['cd_radio_field'])) checked( $options['cd_radio_field'], 1 ); ?> value= "1" >
 	<?php }
 	
-	function cd_textarea_field_render() { $options=get_option( 'cd_options_settings' );?><textarea cols="40"rows="5"name="cd_options_settings[cd_textarea_field]"><?php if (isset($options['cd_textarea_field'])) echo $options['cd_textarea_field']; ?></textarea><?php }
+	function cd_textarea_field_render() { $options=get_option( 'cd_options_settings' );?><textarea cols="40" rows="5" name="cd_options_settings[cd_textarea_field]"><?php if (isset($options['cd_textarea_field'])) echo $options['cd_textarea_field']; ?></textarea>
+	<?php }
 	
 	function cd_select_field_render() { $options=get_option( 'cd_options_settings' );?><select name="cd_options_settings[cd_select_field]">
 		<option value="1"<?php if (isset($options['cd_select_field'])) selected( $options['cd_select_field'], 1 ); ?> > Option 1 </option>
