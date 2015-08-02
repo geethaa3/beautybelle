@@ -1,6 +1,6 @@
 <?php
-	//shows a submenu option in my dashboard under 'settings'
-	function cd_add_submenu() {add_submenu_page( 'options-general.php', 'Submenu', 'Submenu', 'manage_options', 'my-sub-menu', 'cd_display_submenu_options');}add_action( 'admin_menu', 'cd_add_submenu' );
+	//shows a submenu option in my dashboard under 'settings', which is not needed so it is commented out-> 
+	//function cd_add_submenu() {add_submenu_page( 'options-general.php', 'Submenu', 'Submenu', 'manage_options', 'my-sub-menu', 'cd_display_submenu_options');} add_action( 'admin_menu', 'cd_add_submenu' );
 
 	// add_menu_page( $page_title, $menu_title, $capability, $menu_slug, $function, $icon_url [put in you own icon], $position [determine where on the page it should appear, bottom/top] );
 	// this adds a major page level like settings
@@ -109,4 +109,6 @@
 	}
 	//this allows us to activate our plugin
 	add_action( 'admin_init', 'cd_settings_init' );
+	
+
 ?>
