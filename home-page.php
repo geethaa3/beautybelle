@@ -30,6 +30,46 @@ get_header(); ?>
 					 $bpr = 2;     // number of columns per each row
 					 while ($my_query->have_posts()): $my_query->the_post(); 			 
 			?>
+			<div class="grid-boxes <?php echo (($c != $bpr) ? 'margin_right' : ''); ?>">
+					<div class="grid-thumbnail">
+						<!-- the loop for my images, along with the posts' permalinks -->
+						<?php if ( has_post_thumbnail()) { ?>
+							<div class="alignleft">
+								<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+									<?php the_post_thumbnail(array(100, 100)); //specifies size of image
+									?>
+								</a>
+							</div>
+						<?php } else { ?>
+							<!-- in case there was no thumbnail -->
+							<img src="<?php bloginfo('template_directory'); ?>/images/no-thumbnail.jpg" alt="No Thumbnail" />
+						<?php } ?>
+					</div>
+									
+					<p class="grid-title">						
+						<a href="<?php the_permalink() ?>" title="<?php printf(__('Permanent Link to %s','rys'), get_the_title()) ?>" rel="bookmark"><?php the_title(); ?></a>
+					</p>
+				</div> 
+							
+				<?php                       
+                    // add a condition here to see if the counter is equal to the number of columns.
+                    if( $c == $bpr ) { 
+                    echo '<div class="clear"></div>';
+                    $c = 0;     // back the counter to 0 if the condition above is true.
+                    }
+                    $c++;             // increment counter of 1 until it hits the limit of columns per row.
+                        
+						endwhile;
+					} else {		 
+						// a message when no posts are found
+						_e( '<h2>Whoopsie daisy!</h2>', 'rys' );
+						_e( '<p>Sorry, it seems like there are no posts at the moment.</p>', 'rys' );		 
+					}
+		 
+					/* Restore original Post Data */
+					wp_reset_postdata();
+				?>
+				
 			</div> <!--#boxes-container -->
 			<div class="clear"></div>
 		</div> <!--#gridBox -->
