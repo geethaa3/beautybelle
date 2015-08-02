@@ -9,6 +9,10 @@ get_header(); ?>
 
 <div id="primary" class="content-area">
 	<div id="main" class="site-main" role="main">
+		<div class="gridBox">
+			<!-- you can add a title for the overall page in this header -->
+			<h2 class="grid-header"><?php _e('', 'rys'); ?></h2>
+			<div class="boxes-container">	
 			<?php
 				//adding arguments for my custom posts in my home page
 				$args = array(
@@ -26,6 +30,9 @@ get_header(); ?>
 					 $bpr = 2;     // number of columns per each row
 					 while ($my_query->have_posts()): $my_query->the_post(); 			 
 			?>
+			</div> <!--#boxes-container -->
+			<div class="clear"></div>
+		</div> <!--#gridBox -->
 				<!--article div-->
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 					<header class="entry-header">
