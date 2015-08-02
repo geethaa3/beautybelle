@@ -10,6 +10,16 @@ get_header(); ?>
 <div id="primary" class="content-area">
 	<div id="main" class="site-main" role="main">
 			<?php
+				//adding arguments for my custom posts in my home page
+				$args = array(
+						'post_type'         => 'post',         // replace "post" if you want to display different post-type
+						'category_name'        => 'gallery',    // category slug
+						'posts_per_page'    => -1            //  show all posts
+					);
+											
+					//Finally set the arguments for my query to show only 5 posts, from category 'Markup', in an ascending order
+					$args=array ('showposts' =>5, 'order'=> 'ASC', 'cat'=>32);
+					$my_query= new WP_Query($args);
 				//loop for my posts starts here
 					 if ($my_query->have_posts()) {
 					 $c = 1;     // counter
