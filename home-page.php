@@ -1,6 +1,6 @@
 <?php
 /**
-* Template Name: 
+* Template Name: Custom Home Page
 *
 * @package Fluffy-master
 */
