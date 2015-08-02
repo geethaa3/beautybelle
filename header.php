@@ -43,6 +43,10 @@
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'beautybelle' ); ?></button>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+			<div class="search-toggle">
+				<i class="fa fa-search"> </i>
+					<a href="#search-container" class"screen-reader-text"> <?php _e('Search', 'beautybelle' ); ?> </a>
+			</div>
 			<?php beautybelle_social_menu(); ?>
 		</nav><!-- #site-navigation -->
 		<div id="search-container" class="search-box-wrapper clear">
