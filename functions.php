@@ -102,6 +102,8 @@ add_action( 'after_setup_theme', 'beautybelle_content_width', 0 );
  *
  * @link http://codex.wordpress.org/Function_Reference/register_sidebar
  */
+ 
+ // Registering sidebar area 
 function beautybelle_widgets_init() {
 	register_sidebar( array(
 		'name'          => esc_html__( 'Sidebar', 'beautybelle' ),
@@ -112,7 +114,8 @@ function beautybelle_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
-	
+
+// Registering footer widget area 
 	register_sidebar( array(
 		'name'          => esc_html__( 'Footer Widgets', 'beautybelle' ),
 		'id'            => 'sidebar-2',
