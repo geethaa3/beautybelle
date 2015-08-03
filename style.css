@@ -23,6 +23,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
+<<<<<<< HEAD
 1.0 - Reset
 2.0 - Typography
 3.0 - Elements
@@ -43,6 +44,29 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	12.1 - Captions
 	12.2 - Galleries
 13.0- Footer
+=======
+# Normalize
+# Typography
+# Elements
+# Forms
+# Navigation
+	## Links
+	## Menus
+# Accessibility
+# Alignments
+# Clearings
+# Header
+# Widgets
+# Content
+    ## Posts and pages
+	## Asides
+	## Comments
+# Infinite scroll
+# Media
+	## Captions
+	## Galleries
+# Footer 
+>>>>>>> origin/master
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
@@ -614,9 +638,13 @@ a:focus,
 .screen-reader-text {
 	clip: rect(1px, 1px, 1px, 1px);
 	position: absolute !important;
+<<<<<<< HEAD
 	height: 1px;
 	width: 1px;
 	overflow: hidden;
+=======
+	right: 0;
+>>>>>>> origin/master
 }
 
 .screen-reader-text:hover,
@@ -680,8 +708,12 @@ a:focus,
 .site-branding {
     padding: -2rem 0;
     text-align: center;
+<<<<<<< HEAD
     background: #FFF;
     background-repeat: no-repeat;
+=======
+    background: #E6E6FA; 
+>>>>>>> origin/master
 }
 
 .site-title {
@@ -1199,4 +1231,22 @@ We have coded it specifically for 15" Macs, iPhones, and iPads, but it should wo
     .comment-content,
     .reply { margin-left: 0; }
 }
+<<<<<<< HEAD
   
+=======
+
+/*--------------------------------------------------------------
+# Footer 
+--------------------------------------------------------------*/
+.site-footer {
+	padding: 2em; 
+	font-family:  'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+	font-size: 16px; 
+	color: #4B0082; 
+	background-color: #E6E6FA; 
+}
+
+.site-info {
+	text-align: center; 
+}
+>>>>>>> origin/master
