@@ -123,7 +123,7 @@ html {
 	box-sizing:         border-box;
 }
 body {
-	background: #fff; /* Fallback for when there is no custom background color defined. */
+	background: #fff; /* Custom color when there is no custom background color defined. */
 }
 article,
 aside,
@@ -638,13 +638,11 @@ a:focus,
 .screen-reader-text {
 	clip: rect(1px, 1px, 1px, 1px);
 	position: absolute !important;
-<<<<<<< HEAD
 	height: 1px;
 	width: 1px;
 	overflow: hidden;
-=======
 	right: 0;
->>>>>>> origin/master
+
 }
 
 .screen-reader-text:hover,
@@ -708,12 +706,10 @@ a:focus,
 .site-branding {
     padding: -2rem 0;
     text-align: center;
-<<<<<<< HEAD
-    background: #FFF;
+	background: #FFF;
     background-repeat: no-repeat;
-=======
-    background: #E6E6FA; 
->>>>>>> origin/master
+	background: #E6E6FA; 
+
 }
 
 .site-title {
