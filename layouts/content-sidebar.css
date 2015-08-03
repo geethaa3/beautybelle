@@ -1,77 +1,3 @@
-<<<<<<< HEAD
-/*
-Theme Name: beautybelle
-Layout: Content-Sidebar
-*/
-
-.site-content {
-    padding-bottom: 2em;
-    
-    background-color: white;
-  
-}
-
-.entry-content {
-	background-color: #FFAAAA;
-	}
-.single .site-content,
-.page .site-content { 
-    background: #fff; 
-    background: hsl(0, 0%, 100%);
-}
-.site-content .widget-area {
-    width: 380px;
-    float: right;
-    padding: 4rem;
-    background: #D46A6A;
-}
-.site-footer {
-    clear: both;
-    width: 100%;
-}
-
-.entry-header,
-.post-navigation,
-.entry-content,
-.entry-footer,
-.tag-links,
-
-.comments-area,
-.paging-navigation {
-    position: relative;
-    max-width: 780px;
-    max-width: 78rem;
-    padding: 0 4rem;
-    margin: 0 auto;
-}
-
-@media screen and (min-width: 1160px) and (max-width: 1539px) {
-    .content-area {
-        width: 100%;
-        float: left;
-        margin-left: -380px;
-        padding-left: 380px;
-    }
-    
-    .entry-header,
-    .entry-content,
-    .entry-footer,
-    .tag-links,
-    .post-navigation,
-    .comments-area,
-    .paging-navigation {
-    	margin-right: 0;
-    	}
-    
-    @media screen and (max-width: 1159px) {  
-    .site-content .widget-area {
-        width: auto;
-        max-width: 780px;
-        float: none;
-        margin: 1em auto 0;
-    }
-}
-=======
 /*
 Theme Name: beautybelle
 Layout: Content-Sidebar
@@ -144,5 +70,5 @@ Layout: Content-Sidebar
         margin: 1em auto 0;
     }
 }
->>>>>>> origin/master
+
     
