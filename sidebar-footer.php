@@ -4,6 +4,7 @@
 * Footer widgets 
 */ 
 
+// This is a conditional statement that states that the footer widget area will only appear if it is active (i,.e. if there are widgets placed in it), otherwise it will not appear. 
 if ( ! is_active_sidebar('sidebar-2')) { 
 			return; 
 }
