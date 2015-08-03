@@ -1,5 +1,5 @@
 /*
-Theme Name: beauty belle
+Theme Name: beautybelle
 Layout: Content-Sidebar
 */
 
@@ -11,7 +11,7 @@ Layout: Content-Sidebar
 }
 
 .entry-content {
-	background-color: #A7E4E7;
+	background-color: #FFAAAA;
 	}
 .single .site-content,
 .page .site-content { 
@@ -22,7 +22,7 @@ Layout: Content-Sidebar
     width: 380px;
     float: right;
     padding: 4rem;
-    background: #FFA5E7;
+    background: #D46A6A;
 }
 .site-footer {
     clear: both;
