@@ -67,7 +67,7 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
-	<?php get_sidebar('footer');?>  // This function calls the footer widget sidebar. 
+	<?php get_sidebar('footer');?>  <!--This function calls the footer widget sidebar.-->
 		<div class="site-info">
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'beautybelle' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'beautybelle' ), 'WordPress' ); ?></a>
 			<span class="sep"> | </span>
