@@ -200,7 +200,10 @@ h2, h3, h4, h5, h6 {
 	font-family: 'The Girl Next Door';
 	
 }
+#main {
+	margin: 1em;
 
+}
 .entry-content h1 {
     font-size: 32px;
     font-size: 3.2rem;
@@ -1143,6 +1146,9 @@ We have coded it specifically for 15" Macs, iPhones, and iPads, but it should wo
 
 /* Makes the fonts smaller as screen size reduces */
 @media screen and (max-width: 680px) {
+	#secondary {
+		clear: both;
+		}
     .entry-title {
         font-size: 32px;
         font-size: 3.2rem;
