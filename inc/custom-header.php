@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?php
 /**
  * Sample implementation of the Custom Header feature
@@ -125,6 +124,5 @@ function beautybelle_admin_header_image() {
 <?php
 }
 endif; // beautybelle_admin_header_image
-
 
 ?>
