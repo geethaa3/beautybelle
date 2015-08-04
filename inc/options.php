@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 <?php
 	//shows a submenu option in my dashboard under 'settings', which is not needed so it is commented out-> 
 	//function cd_add_submenu() {add_submenu_page( 'options-general.php', 'Submenu', 'Submenu', 'manage_options', 'my-sub-menu', 'cd_display_submenu_options');} add_action( 'admin_menu', 'cd_add_submenu' );
