@@ -175,4 +175,4 @@ require get_template_directory() . '/inc/jetpack.php';
 // Call the file that controls the theme options page
 require get_stylesheet_directory() .'/inc/options.php';
 
-/ Call the file that makes our new widgetrequireget_stylesheet_directory() .'/inc/thewidget.php';
+/Call the file that makes our new widgetrequireget_stylesheet_directory() .'/inc/thewidget.php';
