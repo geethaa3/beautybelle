@@ -23,8 +23,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
-<<<<<<< HEAD
-1.0 - Reset
+1.0 - Normalize
 2.0 - Typography
 3.0 - Elements
 4.0 - Forms
@@ -44,87 +43,29 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	12.1 - Captions
 	12.2 - Galleries
 13.0- Footer
-=======
-# Normalize
-# Typography
-# Elements
-# Forms
-# Navigation
-	## Links
-	## Menus
-# Accessibility
-# Alignments
-# Clearings
-# Header
-# Widgets
-# Content
-    ## Posts and pages
-	## Asides
-	## Comments
-# Infinite scroll
-# Media
-	## Captions
-	## Galleries
-# Footer 
->>>>>>> origin/master
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
-1.0 - Reset
+1.0 - Normalize
 --------------------------------------------------------------*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, font, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td {
-	border: 0;
-	font-family: inherit;
-	font-size: 100%;
-	font-style: inherit;
-	font-weight: inherit;
-	margin: 0;
-	outline: 0;
-	padding: 0;
-	vertical-align: baseline;
-}
-
-#header {
- width: 750px;
- height: 100px;
- }
-
-
-body,
-button,
-input,
-select,
-textarea {
-    font-size: 18px;
-    font-size: 1.8rem;
-    font-family: 'PT Serif', serif;
-    line-height: 1.5;
-    color: #404040;
-}
 
 html {
-	font-size: 62.5%; /* Corrects text resizing oddly in IE6/7 when body font-size is set using em units http://clagnut.com/blog/348/#c790 */
-	overflow-y: scroll; /* Keeps page centered in all browsers regardless of content height */
-	-webkit-text-size-adjust: 100%; /* Prevents iOS text size adjust after orientation change, without disabling user zoom */
-	-ms-text-size-adjust:     100%; /* www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
+	font-family: sans-serif;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust:     100%;
 }
-*,
-*:before,
-*:after { /* apply a natural box layout model to all elements; see http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
-	-webkit-box-sizing: border-box; /* Not needed for modern webkit but still used by Blackberry Browser 7.0; see http://caniuse.com/#search=box-sizing */
-	-moz-box-sizing:    border-box; /* Still needed for Firefox 28; see http://caniuse.com/#search=box-sizing */
-	box-sizing:         border-box;
-}
+
+
 body {
-	background: #fff; /* Custom color when there is no custom background color defined. */
+	
+	font-size: 12px;
+	font-family: 'Century Gothic';
+	
+	text-align: center;
+	margin: 0;
 }
+}
+
 article,
 aside,
 details,
@@ -133,39 +74,225 @@ figure,
 footer,
 header,
 main,
+menu,
 nav,
-section {
+section,
+summary {
 	display: block;
 }
-ol, ul {
-	list-style: none;
+
+audio,
+canvas,
+progress,
+video {
+	display: inline-block;
+	vertical-align: baseline;
 }
-table { /* tables still need 'cellspacing="0"' in the markup */
-	border-collapse: separate;
-	border-spacing: 0;
+
+audio:not([controls]) {
+	display: none;
+	height: 0;
 }
-caption, th, td {
-	font-weight: normal;
+
+[hidden],
+template {
+	display: none;
+}
+
+a {
+	background-color: transparent;
+}
+
+
+
+#content {
+	background-color: #EECAD9;
+}
+
+#page {
+	background-color: #FFF;
+	margin: 0 auto;
+	padding: 0;
+	width: 80%;
+	border: 10px solid #000;
 	text-align: left;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: "";
-}
-blockquote, q {
-	quotes: "" "";
-}
-a:focus {
-	outline: thin dotted;
-}
-a:hover,
-a:active {
+	-moz-border-radius: 30px;
+	-khtml-border-radius: 30px;
+	-webkit-border-radius: 30px;
+	border-radius: 30px;
+	}
+#headerimg {
+	width: 770px;
+	}	
+
+a:active,
+a:hover {
 	outline: 0;
 }
-a img {
+
+abbr[title] {
+	border-bottom: 1px dotted;
+}
+
+b,
+strong {
+	font-weight: bold;
+}
+
+dfn {
+	font-style: italic;
+}
+
+h1 {
+	font-size: 2em;
+	margin: 0.67em 0;
+}
+
+mark {
+	background: #ff0;
+	color: #000;
+}
+
+small {
+	font-size: 80%;
+}
+
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sup {
+	top: -0.5em;
+}
+
+sub {
+	bottom: -0.25em;
+}
+
+img {
 	border: 0;
 }
 
+svg:not(:root) {
+	overflow: hidden;
+}
+
+figure {
+	margin: 1em 40px;
+}
+
+hr {
+	box-sizing: content-box;
+	height: 0;
+}
+
+pre {
+	overflow: auto;
+}
+
+code,
+kbd,
+pre,
+samp {
+	font-family: monospace, monospace;
+	font-size: 1em;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+	color: inherit;
+	font: inherit;
+	margin: 0;
+}
+
+button {
+	overflow: visible;
+}
+
+button,
+select {
+	text-transform: none;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	-webkit-appearance: button;
+	cursor: pointer;
+}
+
+button[disabled],
+html input[disabled] {
+	cursor: default;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+
+input {
+	line-height: normal;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+	box-sizing: border-box;
+	padding: 0;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+	height: auto;
+}
+
+input[type="search"] {
+	-webkit-appearance: textfield;
+	box-sizing: content-box;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+
+fieldset {
+	border: 1px solid #c0c0c0;
+	margin: 0 2px;
+	padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+	border: 0;
+	padding: 0;
+}
+
+textarea {
+	overflow: auto;
+}
+
+optgroup {
+	font-weight: bold;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+td,
+th {
+	padding: 0;
+}
 /*--------------------------------------------------------------
 2.0 Typography
 --------------------------------------------------------------*/
@@ -175,7 +302,7 @@ a img {
     font-size: 40px;
     font-size: 4rem;
     line-height: 1.3em;
-    color: #000;
+    color: #A14169;
 }
 
 .entry-content a { 
@@ -187,9 +314,9 @@ button,
 input,
 select,
 textarea {
-	color: green;
+	color: #7C244E;
 	font-family: 'Century Gothic';
-	font-size: 15px;
+	font-size: 10px;
 	line-height: 1.5;
 }
 h2, h3, h4, h5, h6 {
@@ -200,10 +327,7 @@ h2, h3, h4, h5, h6 {
 	font-family: 'The Girl Next Door';
 	
 }
-#main {
-	margin: 1em;
 
-}
 .entry-content h1 {
     font-size: 32px;
     font-size: 3.2rem;
@@ -226,7 +350,7 @@ h1 {
 font-weight: bold;
 font-size: 25px;
 font-size: 2.5rem;
-font-family: 'The Girl Next Door';
+font-family: 'Codystar';
 }
 
 p {
@@ -370,8 +494,8 @@ input[type="submit"] {
     font-family: Helvetica;
     text-transform: uppercase;
     line-height: 1;
-    color: black;
-    background-color: yellow;
+    color: #FFF;
+    background-color: #FFC99C;
     border: none;
 }
 
@@ -518,7 +642,7 @@ a:focus,
     clear: both;
     font-family: 'Architects Daughter';
     text-transform: uppercase;
-    background: #FFD9AA;
+    background: #A14169;
 }
 .main-navigation ul {
     list-style: none;
@@ -531,12 +655,12 @@ a:focus,
 }
 .main-navigation a {
     display: block;
-    padding: 1.3em 1em;
-    font-size: 14px;
-    font-size: 1.4rem;
+    padding: 0.5em;
+    font-size: 10px;
+    font-size: 1rem;
     text-decoration: none;
     line-height: 1.3em;
-    color: white;
+    color: #EECAD9;
 }
 .main-navigation ul ul {
     position: absolute;
@@ -545,7 +669,7 @@ a:focus,
     display: none;
     float: left;
     padding: 0;
-    background: #4d4d4d;
+    background: #A14169;
 }
 .main-navigation ul ul ul {
     left: 100%;
@@ -558,12 +682,12 @@ a:focus,
 }
 .main-navigation li:hover > a {
     color: #fff;
-    background: #4d4d4d;
+    background: #EECAD9;
 }
 .main-navigation ul ul :hover > a {
 }
 .main-navigation ul ul a:hover {
-    background: #313131;
+    background: #808080;
 }
 .main-navigation ul li:hover > ul {
     display: block;
@@ -572,18 +696,18 @@ a:focus,
 .main-navigation .current-menu-item > a,
 .main-navigation .current_page_item > a:hover,
 .main-navigation .current-menu-item > a:hover {
-    background: #FFF;
-    color: purple;
+    background: #B49AA5;
+    color: #7A1B43;
 }
 
 .main-navigation .current_page_ancestor {
-    background: purple;
+    background: #808080;
 }
 
 .main-navigation ul ul .current_page_parent,
 .main-navigation .current_page_parent .current_page_item > a {
     color: #fff;
-    background: yellow;
+    background: #7A1B43;
 } 
 .post-navigation a {
     font-size: 20px; 
@@ -644,8 +768,6 @@ a:focus,
 	height: 1px;
 	width: 1px;
 	overflow: hidden;
-	right: 0;
-
 }
 
 .screen-reader-text:hover,
@@ -709,10 +831,12 @@ a:focus,
 .site-branding {
     padding: -2rem 0;
     text-align: center;
-	background: #FFF;
+    background: #FFF;
     background-repeat: no-repeat;
-	background: #E6E6FA; 
-
+	font-size: 3em; 
+	font-family: 'Codystar';
+	font-weight: bold;
+	
 }
 
 .site-title {
@@ -858,10 +982,14 @@ a:focus,
 .entry-title {
     margin: 0 0 2rem;
     font-weight: 700;
-    font-size: 27px;
+    font-size: 20px;
     line-height: 1.3em;
     color: #000;
     padding-top: 20px;
+}
+
+.entry-content {
+	width: 80%;
 }
 
 .entry-content a { 
@@ -883,9 +1011,8 @@ a:focus,
 .entry-content p,
 .entry-content ul,
 .entry-content ol {
-    font-size: 20px;
-    font-size: 2rem;
-    line-height: 1.6em;
+    font-size: 14px;
+    line-height: 1.5em;
 }
 
 .entry-content blockquote p {
@@ -894,10 +1021,26 @@ a:focus,
     line-height: 1.5em;
 }
 
+/* Content Area & Sidebar Layout Styling */ 
+
+#primary {
+	width: 75%; 
+}
+
+.content-area {
+	width: 75%; 
+}
+
+#secondary {
+	width: 20%; 
+	padding: 5px; 
+	margin-top: 0%; 
+}
+
 /* Meta */
 .category-list {
     margin: 1.3em 0 1em;
-    font-family: Helvetica;
+    font-family: 'Century Gothic';
     font-size: 16px;
     font-size: 1.6rem;
 }
@@ -924,8 +1067,8 @@ a:focus,
     margin-top: 3rem;
     margin-bottom: 5rem;
     font-family:  'Architects Daughter';
-    font-size: 16px;
-    font-size: 1.6rem;
+    font-size: 12px;
+    font-size: 1.2rem;
     line-height: 2em;
 }
 
@@ -1003,6 +1146,11 @@ blockquote.alignright {
     float: right;
     padding: 1em 0 0;
     margin-left: 2em;
+}
+
+div #comments
+{
+	display: none; 
 }
 
 /*--------------------------------------------------------------
@@ -1120,12 +1268,12 @@ object {
 13.0 Footer
 --------------------------------------------------------------*/
 .site-footer {
-    padding: 2em;
+    padding: 0;
     font-family: 'Architects Daughter';
     font-size: 16px;
     font-size: 1.6rem;
     color: #fff;
-    background: #DE94AF;
+    background: #7A1B43;
 }
 
 .site-footer a {
@@ -1135,7 +1283,7 @@ object {
 .site-info { 
     text-align: center;
     font-size: 12px; 
-    color:#4A001B;
+    color:#DFA0BB;
 }
     
 /*--------------------------------------------------------------
@@ -1146,9 +1294,6 @@ We have coded it specifically for 15" Macs, iPhones, and iPads, but it should wo
 
 /* Makes the fonts smaller as screen size reduces */
 @media screen and (max-width: 680px) {
-	#secondary {
-		clear: both;
-		}
     .entry-title {
         font-size: 32px;
         font-size: 3.2rem;
@@ -1233,20 +1378,4 @@ We have coded it specifically for 15" Macs, iPhones, and iPads, but it should wo
     .comment-content,
     .reply { margin-left: 0; }
 }
-
-
-/*--------------------------------------------------------------
-# Footer 
---------------------------------------------------------------*/
-.site-footer {
-	padding: 2em; 
-	font-family:  'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
-	font-size: 16px; 
-	color: #4B0082; 
-	background-color: #E6E6FA; 
-}
-
-.site-info {
-	text-align: center; 
-}
-
+  
