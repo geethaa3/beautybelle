@@ -23,7 +23,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
-<<<<<<< HEAD
 1.0 - Reset
 2.0 - Typography
 3.0 - Elements
@@ -44,29 +43,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	12.1 - Captions
 	12.2 - Galleries
 13.0- Footer
-=======
-# Normalize
-# Typography
-# Elements
-# Forms
-# Navigation
-	## Links
-	## Menus
-# Accessibility
-# Alignments
-# Clearings
-# Header
-# Widgets
-# Content
-    ## Posts and pages
-	## Asides
-	## Comments
-# Infinite scroll
-# Media
-	## Captions
-	## Galleries
-# Footer 
->>>>>>> origin/master
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
@@ -102,7 +78,7 @@ button,
 input,
 select,
 textarea {
-    font-size: 18px;
+    font-size: 12px;
     font-size: 1.8rem;
     font-family: 'PT Serif', serif;
     line-height: 1.5;
@@ -123,7 +99,7 @@ html {
 	box-sizing:         border-box;
 }
 body {
-	background: #fff; /* Custom color when there is no custom background color defined. */
+	background: #fff; /* Fallback for when there is no custom background color defined. */
 }
 article,
 aside,
@@ -175,7 +151,7 @@ a img {
     font-size: 40px;
     font-size: 4rem;
     line-height: 1.3em;
-    color: #000;
+    color: #A14169;
 }
 
 .entry-content a { 
@@ -187,9 +163,9 @@ button,
 input,
 select,
 textarea {
-	color: green;
+	color: #7C244E;
 	font-family: 'Century Gothic';
-	font-size: 15px;
+	font-size: 10px;
 	line-height: 1.5;
 }
 h2, h3, h4, h5, h6 {
@@ -200,10 +176,7 @@ h2, h3, h4, h5, h6 {
 	font-family: 'The Girl Next Door';
 	
 }
-#main {
-	margin: 1em;
 
-}
 .entry-content h1 {
     font-size: 32px;
     font-size: 3.2rem;
@@ -226,7 +199,7 @@ h1 {
 font-weight: bold;
 font-size: 25px;
 font-size: 2.5rem;
-font-family: 'The Girl Next Door';
+font-family: 'Codystar';
 }
 
 p {
@@ -370,8 +343,8 @@ input[type="submit"] {
     font-family: Helvetica;
     text-transform: uppercase;
     line-height: 1;
-    color: black;
-    background-color: yellow;
+    color: #FFF;
+    background-color: #FFC99C;
     border: none;
 }
 
@@ -518,7 +491,7 @@ a:focus,
     clear: both;
     font-family: 'Architects Daughter';
     text-transform: uppercase;
-    background: #FFD9AA;
+    background: #A14169;
 }
 .main-navigation ul {
     list-style: none;
@@ -536,7 +509,7 @@ a:focus,
     font-size: 1.4rem;
     text-decoration: none;
     line-height: 1.3em;
-    color: white;
+    color: #EECAD9;
 }
 .main-navigation ul ul {
     position: absolute;
@@ -545,7 +518,7 @@ a:focus,
     display: none;
     float: left;
     padding: 0;
-    background: #4d4d4d;
+    background: #A14169;
 }
 .main-navigation ul ul ul {
     left: 100%;
@@ -558,12 +531,12 @@ a:focus,
 }
 .main-navigation li:hover > a {
     color: #fff;
-    background: #4d4d4d;
+    background: #EECAD9;
 }
 .main-navigation ul ul :hover > a {
 }
 .main-navigation ul ul a:hover {
-    background: #313131;
+    background: #808080;
 }
 .main-navigation ul li:hover > ul {
     display: block;
@@ -572,8 +545,8 @@ a:focus,
 .main-navigation .current-menu-item > a,
 .main-navigation .current_page_item > a:hover,
 .main-navigation .current-menu-item > a:hover {
-    background: #FFF;
-    color: purple;
+    background: #B49AA5;
+    color: #7A1B43;
 }
 
 .main-navigation .current_page_ancestor {
@@ -644,8 +617,6 @@ a:focus,
 	height: 1px;
 	width: 1px;
 	overflow: hidden;
-	right: 0;
-
 }
 
 .screen-reader-text:hover,
@@ -709,10 +680,12 @@ a:focus,
 .site-branding {
     padding: -2rem 0;
     text-align: center;
-	background: #FFF;
+    background: #FFF;
     background-repeat: no-repeat;
-	background: #E6E6FA; 
-
+	font-size: 3em; 
+	font-family: 'Codystar';
+	font-weight: bold;
+	
 }
 
 .site-title {
@@ -864,6 +837,10 @@ a:focus,
     padding-top: 20px;
 }
 
+.entry-content {
+	width: 60%;
+}
+
 .entry-content a { 
     text-decoration: underline; 
 }
@@ -893,6 +870,7 @@ a:focus,
     font-size: 2.8rem;
     line-height: 1.5em;
 }
+
 
 /* Meta */
 .category-list {
@@ -1003,6 +981,11 @@ blockquote.alignright {
     float: right;
     padding: 1em 0 0;
     margin-left: 2em;
+}
+
+div #comments
+{
+	display: none; 
 }
 
 /*--------------------------------------------------------------
@@ -1125,7 +1108,7 @@ object {
     font-size: 16px;
     font-size: 1.6rem;
     color: #fff;
-    background: #DE94AF;
+    background: #7A1B43;
 }
 
 .site-footer a {
@@ -1135,7 +1118,7 @@ object {
 .site-info { 
     text-align: center;
     font-size: 12px; 
-    color:#4A001B;
+    color:#DFA0BB;
 }
     
 /*--------------------------------------------------------------
@@ -1146,9 +1129,6 @@ We have coded it specifically for 15" Macs, iPhones, and iPads, but it should wo
 
 /* Makes the fonts smaller as screen size reduces */
 @media screen and (max-width: 680px) {
-	#secondary {
-		clear: both;
-		}
     .entry-title {
         font-size: 32px;
         font-size: 3.2rem;
@@ -1233,20 +1213,3 @@ We have coded it specifically for 15" Macs, iPhones, and iPads, but it should wo
     .comment-content,
     .reply { margin-left: 0; }
 }
-
-
-/*--------------------------------------------------------------
-# Footer 
---------------------------------------------------------------*/
-.site-footer {
-	padding: 2em; 
-	font-family:  'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
-	font-size: 16px; 
-	color: #4B0082; 
-	background-color: #E6E6FA; 
-}
-
-.site-info {
-	text-align: center; 
-}
-
