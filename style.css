@@ -67,8 +67,13 @@ body {
 	
 	text-align: center;
 	margin: 0;
+<<<<<<< HEAD
 }
 }
+=======
+}
+}
+>>>>>>> origin/master
 
 article,
 aside,
@@ -122,11 +127,22 @@ body.page {
 	width: 80%;
 	text-align: left;
 	}
+<<<<<<< HEAD
 
 #primary{
 	margin: 1em;
 	}
+#secondary {
+padding: 0!important;
+}
 
+#supplementary {
+margin-top: 1em;
+}
+
+.site-info {
+margin-bottom: 1em;
+}
 
 #headerimg {
 	width: 770px;
@@ -135,7 +151,14 @@ body.page {
 #content {
 	padding-bottom: 0px;
 	}
+
 	
+=======
+#headerimg {
+	width: 770px;
+	}	
+
+>>>>>>> origin/master
 a:active,
 a:hover {
 	outline: 0;
@@ -185,9 +208,77 @@ sub {
 }
 
 img {
+<<<<<<< HEAD
 	border: 0;
 }
 
+svg:not(:root) {
+	overflow: hidden;
+}
+
+figure {
+	margin: 1em 40px;
+}
+
+hr {
+	box-sizing: content-box;
+	height: 0;
+}
+
+pre {
+	overflow: auto;
+}
+
+code,
+kbd,
+pre,
+samp {
+	font-family: monospace, monospace;
+	font-size: 1em;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+	color: inherit;
+	font: inherit;
+	margin: 0;
+}
+
+button {
+	overflow: visible;
+}
+
+button,
+select {
+	text-transform: none;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	-webkit-appearance: button;
+	cursor: pointer;
+}
+
+button[disabled],
+html input[disabled] {
+	cursor: default;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+=======
+>>>>>>> origin/master
+	border: 0;
+	padding: 0;
+}
+
+<<<<<<< HEAD
+=======
 svg:not(:root) {
 	overflow: hidden;
 }
@@ -251,6 +342,7 @@ input::-moz-focus-inner {
 	padding: 0;
 }
 
+>>>>>>> origin/master
 input {
 	line-height: normal;
 }
@@ -335,7 +427,8 @@ h2, h3, h4, h5, h6 {
 	font-weight: bold;
 	font-size: 18px;
     font-size: 1.8rem;
-	font-family: 'Architects Daughter'; 
+	font-family: 'Architects Daughter';
+	margin-left: 0.5em;
 	
 }
 
@@ -506,7 +599,11 @@ input[type="submit"] {
     text-transform: uppercase;
     line-height: 1;
     color: #FFF;
+<<<<<<< HEAD
     background-color: #A14169;
+=======
+    background-color: #FFC99C;
+>>>>>>> origin/master
     border: none;
 }
 
@@ -988,10 +1085,13 @@ div.tagcloud {
 	font-family: 'Century Gothic'; 
 }
 
+<<<<<<< HEAD
 h2.widget-title{
 	color: #FFFFFF; 
 }
 
+=======
+>>>>>>> origin/master
 /* WordPress search bar widget in footer */ 
 aside#search-2.widget.widget_search {
 	font-size: 18px; 
@@ -1082,8 +1182,13 @@ aside#search-2.widget.widget_search {
     margin-top: 3rem;
     margin-bottom: 5rem;
     font-family:  'Architects Daughter';
+<<<<<<< HEAD
     font-size: 10px;
     font-size: 1rem;
+=======
+    font-size: 12px;
+    font-size: 1.2rem;
+>>>>>>> origin/master
     line-height: 2em;
 }
 
@@ -1299,56 +1404,25 @@ object {
     text-align: center;
     font-size: 12px; 
     color:#DFA0BB;
+<<<<<<< HEAD
 	padding-bottom: 1em;
+=======
+>>>>>>> origin/master
 }
-
-/* Grid styling on front page starts here */
-.margin_right{ 
-	margin: 0 10px 20px 0;
-	}
- 
-.gridBox { 
-   margin: 20px 0; 
-   max-width: 100%; 
-	}
-
-.gridBox .grid-boxes{ 
-    float: left; width: 278px;
-	margin: 0 0 10px 10px;
-	}
- 
-.grid-boxes{ 	 
-	  /*changes position of right column, from its left side*/
-	}
-
-.margin_right {
-	margin: 0 0 10px 0;
-	padding-left: 4px; /*increasing this padding shrinks right side of left column*/
-	border-right: 1px solid #DFDDD5;
-	}
-
-.gridBox .grid-boxes .grid-title{ 
-	text-align: center; 
-	margin-bottom: 0 !important; 
-	padding: 8px 0 6px 0; 
-	font-size: 14px;
-	width: 100%;   
-	}
-
-.clear {
-	margin-top: 50px;
-	margin-bottom: 50px;
-	width: 100%;
-	border-bottom: 1px solid #DFDDD5;
-	}
 
     
 /*--------------------------------------------------------------
 14.0 Responsiveness 
 --------------------------------------------------------------*/
+<<<<<<< HEAD
 
 /* --------------- style declarations for smart-phones (orientation: landscape) --------------- */
 
+=======
+
+/* --------------- style declarations for smart-phones (orientation: landscape) --------------- */
+
+>>>>>>> origin/master
 @media screen and (max-width: 640px) {
 
 #masthead, #content, #colophon {
@@ -1402,70 +1476,17 @@ object {
 		display: none;
 	}
 	
+<<<<<<< HEAD
 .menu-social{
 	display: none; 
 }
 
-/** Styling the grid box here*/
-	.gridBox, .boxes-container, .clear {
-		margin: 0 0 1em;
-		max-width: 100%;
-		}
+=======
+#social-menu{
+	display: none; 
+}
 
-	.margin_right{ 
-		margin: 0 10px 20px 0;
-		}
- 
-	.gridBox { 
-		margin: 4px 0; 
-		width: 100%; 
-		}
-
-	.gridBox { 
-		float: left; 
-		width: width: 50%;
-		margin: 0 0 10px 10px;
-		}
-	 
-	.grid-boxes{ 	 
-		padding-left: 47px;  /*changes position of right column, from its left side. this centered the left side*/
-		width: 100px;
-		
-		}
-
-	.margin_right {
-		margin: 0 0 10px 0;
-		padding-left: ; /*increasing this padding shrinks right side of left column*/
-		border-right: 1px solid #DFDDD5;
-		}
-
-	.gridBox .grid-boxes .grid-title{ 
-	   text-align: center; 
-	   margin-bottom: 0 !important; 
-	   padding: 0; 
-	   font-size: 14px;
-	   width: 80%;  
-		}
-
-	.clear {
-		margin: 0.5em 0;
-		border-bottom: 1px solid #DFDDD5;
-		}
-	
-	.gridBox .grid-boxes {
-		width: 50%;
-		margin:0;
-		}
-		
-	.margin_right {
-		width: 40%;
-		margin:0;
-		}
-		
-	.alignleft {
-		margin-left: 0; /*overrites default*/
-		}
-
+>>>>>>> origin/master
 }
 	
 /* --------------- style declarations for smart-phones (orientation: portrait) ------------------ */ 
@@ -1487,8 +1508,11 @@ object {
 	display: none; 
 }
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> origin/master
  .entry-title {
         font-size: 22px;
         font-size: 2.2rem;
@@ -1518,12 +1542,16 @@ object {
         line-height: 1em;
     }
  
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> origin/master
 .menu-toggle,
 .main-navigation.toggled .nav-menu {
 		display: block;
 	}
+<<<<<<< HEAD
 	
 	.main-navigation ul {
 		display: none;
@@ -1562,66 +1590,12 @@ width: 300px;
 height: 300px;
 }	
 
-/** Styling the grid box here*/
-	.gridBox, .boxes-container, .clear {
-		margin: 0 0 1em;
-		max-width: 100%;
-		}
-		
-	#main {
-		padding-top: 0; /*gets rid of uneccessary waste of space*/
-		}
 
-	.margin_right{ 
-		margin: 0 10px 20px 0;
-		}
- 
-	.gridBox { 
-		margin: 4px 0; 
-		width: 100%; 
-		}
+=======
 
-	.gridBox .grid-boxes{ 
-		float: left; 
-		width: width: 50%;
-		margin: 0 0 10px 10px;
-		}
-	 
-	.grid-boxes{ 	 
-		padding-left: 47px;  /*changes position of right column, from its left side. this centered the left side*/
-		}
-
-	.margin_right {
-		margin: 0 0 10px 0;
-		padding-left: ; /*increasing this padding shrinks right side of left column*/
-		border-right: 1px solid #DFDDD5;
-		}
-
-	.gridBox .grid-boxes .grid-title{ 
-	   text-align: center; 
-	   margin-bottom: 0 !important; 
-	   padding: 0; 
-	   font-size: 14px;
-	   width: 80%;  
-		}
-
-	.clear {
-		margin: 0.5em 0;
-		border-bottom: 1px solid #DFDDD5;
-		}
-	
-	.gridBox .grid-boxes {
-		width: 50%;
-		margin:0;
-		}
-		
-	.margin_right {
-		width: 40%;
-		margin:0;
-		}
-		
-	.alignleft {
-		margin-left: 0; /*overrites default*/
-		}	
+.main-navigation ul {
+		display: none;
+	}
+>>>>>>> origin/master
 
   }

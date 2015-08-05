@@ -1,4 +1,3 @@
-
 <?php
 /**
  * The header for our theme.
@@ -44,12 +43,11 @@
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'beautybelle' ); ?></button>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-		
+
+			
 			<?php beautybelle_social_menu(); ?>
 		</nav><!-- #site-navigation -->
-		
-		</div>
+	
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
-
