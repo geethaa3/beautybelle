@@ -132,9 +132,6 @@ body.page {
 #primary{
 	margin: 1em;
 	}
-#secondary {
-padding: 0!important;
-}
 
 #supplementary {
 margin-top: 1em;
@@ -152,7 +149,69 @@ margin-bottom: 1em;
 	padding-bottom: 0px;
 	}
 
+/* sidebar-content styling*/////////////////////////
+.site-content {
+    padding-bottom: 2em;
+    background-color: #FFF;
+
+}
+
+.entry-content { 
+	background-color: #FFD9AA;
+	}
 	
+.single .site-content,
+.page .site-content { 
+    background: #fff; 
+    background: hsl(0, 0%, 100%);
+}
+
+.site-content .widget-area {
+    width: 40%;
+   float: right;
+    padding: 1em;
+    background: #D46A6A;
+}
+
+.site-footer {
+    clear: both;
+    width: 100%;
+}
+
+#primary {
+	width: 70%; 
+}
+
+.content-area {
+	width: 70%; 
+	float:left; 
+}
+
+#secondary {
+	width: 50%; 
+	height: 1110px;
+	max-height: 100%;
+	padding: 5px; 
+	margin-top: 0%; 
+	margin-bottom: 0%; 
+	background-color: #FF6666; 
+}
+
+.entry-header,
+.post-navigation,
+.entry-content,
+.entry-footer,
+.tag-links,
+.comments-area,
+.paging-navigation {
+    position: relative;
+    max-width: 780px;
+    max-width: 78rem;
+    padding: 0 5rem;
+    margin: 0 auto;
+}
+///////////////////////////////////
+
 =======
 #headerimg {
 	width: 770px;
@@ -1018,7 +1077,7 @@ a:focus,
     margin: 0 0 4em;
     font-family: 'Architects Daughter', sans-serif;
     font-size: 1.6rem;
-    padding-left: 20px;
+	padding: 0.5em;
 
 }
 
