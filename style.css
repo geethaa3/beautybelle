@@ -43,16 +43,27 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	12.1 - Captions
 	12.2 - Galleries
 13.0- Footer
+<<<<<<< HEAD
+=======
+14.0 Responsiveness
+>>>>>>> origin/master
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
 1.0 - Normalize
 --------------------------------------------------------------*/
 
+<<<<<<< HEAD
+=======
+/*--------------------------------------------------------------
+# Normalize
+--------------------------------------------------------------*/
+>>>>>>> origin/master
 html {
 	font-family: sans-serif;
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust:     100%;
+<<<<<<< HEAD
 }
 
 
@@ -65,6 +76,25 @@ body {
 	margin: 0;
 }
 }
+=======
+}
+
+
+body {
+	
+	font-size: 12px;
+	font-family: 'Century Gothic';
+	
+	text-align: center;
+	margin: 0;
+<<<<<<< HEAD
+}
+}
+=======
+}
+}
+>>>>>>> origin/master
+>>>>>>> origin/master
 
 article,
 aside,
@@ -101,12 +131,23 @@ template {
 
 a {
 	background-color: transparent;
+<<<<<<< HEAD
 }
 
 
 
 #content {
 	background-color: #EECAD9;
+=======
+}
+
+body.page {
+	background: #FFD9AA;
+}
+
+#content {
+	background-color: #FFF;
+>>>>>>> origin/master
 }
 
 #page {
@@ -114,6 +155,7 @@ a {
 	margin: 0 auto;
 	padding: 0;
 	width: 80%;
+<<<<<<< HEAD
 	border: 10px solid #000;
 	text-align: left;
 	-moz-border-radius: 30px;
@@ -174,6 +216,150 @@ sub {
 }
 
 img {
+=======
+	text-align: left;
+	}
+<<<<<<< HEAD
+
+#primary{
+	margin: 1em;
+	}
+
+#supplementary {
+margin-top: 1em;
+}
+
+.site-info {
+margin-bottom: 1em;
+}
+
+#headerimg {
+	width: 770px;
+	
+	}	
+#content {
+	padding-bottom: 0px;
+	}
+
+/* sidebar-content styling*/////////////////////////
+.site-content {
+    padding-bottom: 2em;
+    background-color: #FFF;
+
+}
+
+.entry-content { 
+	background-color: #FFD9AA;
+	}
+	
+.single .site-content,
+.page .site-content { 
+    background: #fff; 
+    background: hsl(0, 0%, 100%);
+}
+
+.site-content .widget-area {
+    width: 40%;
+   float: right;
+    padding: 1em;
+    background: #D46A6A;
+}
+
+.site-footer {
+    clear: both;
+    width: 100%;
+}
+
+#primary {
+	width: 70%; 
+}
+
+.content-area {
+	width: 70%; 
+	float:left; 
+}
+
+#secondary {
+	width: 50%; 
+	height: 1110px;
+	max-height: 100%;
+	padding: 5px; 
+	margin-top: 0%; 
+	margin-bottom: 0%; 
+	background-color: #FF6666; 
+}
+
+.entry-header,
+.post-navigation,
+.entry-content,
+.entry-footer,
+.tag-links,
+.comments-area,
+.paging-navigation {
+    position: relative;
+    max-width: 780px;
+    max-width: 78rem;
+    padding: 0 5rem;
+    margin: 0 auto;
+}
+///////////////////////////////////
+
+=======
+#headerimg {
+	width: 770px;
+	}	
+
+>>>>>>> origin/master
+a:active,
+a:hover {
+	outline: 0;
+}
+
+abbr[title] {
+	border-bottom: 1px dotted;
+}
+
+b,
+strong {
+	font-weight: bold;
+}
+
+dfn {
+	font-style: italic;
+}
+
+h1 {
+	font-size: 2em;
+	margin: 0.67em 0;
+}
+
+mark {
+	background: #ff0;
+	color: #000;
+}
+
+small {
+	font-size: 80%;
+}
+
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sup {
+	top: -0.5em;
+}
+
+sub {
+	bottom: -0.25em;
+}
+
+img {
+<<<<<<< HEAD
 	border: 0;
 }
 
@@ -236,10 +422,93 @@ html input[disabled] {
 
 button::-moz-focus-inner,
 input::-moz-focus-inner {
+=======
+>>>>>>> origin/master
+>>>>>>> origin/master
 	border: 0;
 	padding: 0;
 }
 
+<<<<<<< HEAD
+=======
+svg:not(:root) {
+	overflow: hidden;
+}
+
+figure {
+	margin: 1em 40px;
+}
+
+<<<<<<< HEAD
+svg:not(:root) {
+	overflow: hidden;
+}
+
+figure {
+	margin: 1em 40px;
+}
+
+=======
+>>>>>>> origin/master
+hr {
+	box-sizing: content-box;
+	height: 0;
+}
+
+pre {
+	overflow: auto;
+}
+
+code,
+kbd,
+pre,
+samp {
+	font-family: monospace, monospace;
+	font-size: 1em;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+	color: inherit;
+	font: inherit;
+	margin: 0;
+}
+
+button {
+	overflow: visible;
+}
+
+button,
+select {
+	text-transform: none;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	-webkit-appearance: button;
+	cursor: pointer;
+}
+
+button[disabled],
+html input[disabled] {
+	cursor: default;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+
+<<<<<<< HEAD
+=======
+>>>>>>> origin/master
+>>>>>>> origin/master
 input {
 	line-height: normal;
 }
@@ -324,7 +593,8 @@ h2, h3, h4, h5, h6 {
 	font-weight: bold;
 	font-size: 18px;
     font-size: 1.8rem;
-	font-family: 'The Girl Next Door';
+	font-family: 'Architects Daughter';
+	margin-left: 0.5em;
 	
 }
 
@@ -491,11 +761,19 @@ input[type="submit"] {
     font-size: 14px;
     font-size: 1.4rem;
     font-weight: bold;
-    font-family: Helvetica;
+    font-family: 'Century Gothic';
     text-transform: uppercase;
     line-height: 1;
     color: #FFF;
+<<<<<<< HEAD
     background-color: #FFC99C;
+=======
+<<<<<<< HEAD
+    background-color: #A14169;
+=======
+    background-color: #FFC99C;
+>>>>>>> origin/master
+>>>>>>> origin/master
     border: none;
 }
 
@@ -712,8 +990,8 @@ a:focus,
 .post-navigation a {
     font-size: 20px; 
     text-decoration:none;
-    font-family: 'The Girl Next Door', cursive;
-    color: pink; 
+    font-family: 'Architects Daughter', sans-serif;
+    color: #000; 
 }
 /* Small menu */
 .menu-toggle {
@@ -829,7 +1107,7 @@ a:focus,
 }
 
 .site-branding {
-    padding: -2rem 0;
+    padding:  0;
     text-align: center;
     background: #FFF;
     background-repeat: no-repeat;
@@ -910,7 +1188,7 @@ a:focus,
     margin: 0 0 4em;
     font-family: 'Architects Daughter', sans-serif;
     font-size: 1.6rem;
-    padding-left: 20px;
+	padding: 0.5em;
 
 }
 
@@ -950,7 +1228,7 @@ a:focus,
     max-width: 100%;
 }
 
-/* Search widget */
+/* Custom search widget */
 .widget_search .search-submit {
     display: none;
 }
@@ -963,13 +1241,32 @@ a:focus,
 .footer-widgets .widget a:hover {
     color: #fff;
     border-color: #fff;
-
 }
 
 .footer-widgets .widget {
     float: left;
     width: 320px;
     margin: 0 4rem 8rem 4rem;
+}
+
+/* Tag cloud widget*/
+
+div.tagcloud {
+	font-family: 'Century Gothic'; 
+}
+
+<<<<<<< HEAD
+h2.widget-title{
+	color: #FFFFFF; 
+}
+
+=======
+>>>>>>> origin/master
+/* WordPress search bar widget in footer */ 
+aside#search-2.widget.widget_search {
+	font-size: 18px; 
+	margin-top: 8px; 
+	margin-left: 10px; 
 }
 
 
@@ -989,7 +1286,13 @@ a:focus,
 }
 
 .entry-content {
+<<<<<<< HEAD
 	width: 80%;
+=======
+	width: 75%;
+	margin-right: 0%; 
+	background-color: #FFD9AA;
+>>>>>>> origin/master
 }
 
 .entry-content a { 
@@ -1021,6 +1324,7 @@ a:focus,
     line-height: 1.5em;
 }
 
+<<<<<<< HEAD
 /* Content Area & Sidebar Layout Styling */ 
 
 #primary {
@@ -1037,6 +1341,11 @@ a:focus,
 	margin-top: 0%; 
 }
 
+=======
+.archive .hentry{
+	background-color: #FFD9AA;
+}
+>>>>>>> origin/master
 /* Meta */
 .category-list {
     margin: 1.3em 0 1em;
@@ -1056,9 +1365,8 @@ a:focus,
 .entry-meta {
     margin-bottom: 2rem;
     padding: 0;
-    font-family: Helvetica;
-    font-size: 14px;
-    font-size: 1.4rem;
+    font-family: 'Century Gothic';
+    font-size: 1.3em;
 }
 
 .entry-meta a { font-weight: 600; }
@@ -1067,8 +1375,18 @@ a:focus,
     margin-top: 3rem;
     margin-bottom: 5rem;
     font-family:  'Architects Daughter';
+<<<<<<< HEAD
     font-size: 12px;
     font-size: 1.2rem;
+=======
+<<<<<<< HEAD
+    font-size: 10px;
+    font-size: 1rem;
+=======
+    font-size: 12px;
+    font-size: 1.2rem;
+>>>>>>> origin/master
+>>>>>>> origin/master
     line-height: 2em;
 }
 
@@ -1284,11 +1602,20 @@ object {
     text-align: center;
     font-size: 12px; 
     color:#DFA0BB;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+	padding-bottom: 1em;
+=======
+>>>>>>> origin/master
+>>>>>>> origin/master
 }
+
     
 /*--------------------------------------------------------------
-RESPONSIVENESS
+14.0 Responsiveness 
 --------------------------------------------------------------*/
+<<<<<<< HEAD
 /* The following lines ensure that the website is responsive on laptops, smartphones, and tablets.
 We have coded it specifically for 15" Macs, iPhones, and iPads, but it should work fine on all devices. */
 
@@ -1303,79 +1630,197 @@ We have coded it specifically for 15" Macs, iPhones, and iPads, but it should wo
         font-size: 28px;
         font-size: 2.8rem;
     }
+=======
+<<<<<<< HEAD
+>>>>>>> origin/master
 
-    .entry-content p,
-    .entry-content ul,
-    .entry-content ol  {
-        font-size: 18px;
-        font-size: 1.8rem;
-    }
-    
-    .entry-content blockquote p {
-        font-size: 22px;
-        font-size: 2.2rem;
-        line-height: 1.5em;
-    }
+/* --------------- style declarations for smart-phones (orientation: landscape) --------------- */
+
+=======
+
+/* --------------- style declarations for smart-phones (orientation: landscape) --------------- */
+
+>>>>>>> origin/master
+@media screen and (max-width: 640px) {
+
+#masthead, #content, #colophon {
+		display: block; 
+		width: 100%; 
+		overflow: hidden;
+	}
+		 
+#page{
+		width: 100%; 
+	}
+	
+#secondary {
+	display: none; 
 }
 
-/* Changes menu display as size reduces in order to accomodate mobile devices */
-
-@media screen and (max-width: 600px) {
-	.menu-toggle,
-	.main-navigation.toggled .nav-menu {
+ .entry-title {
+        font-size: 22px;
+        font-size: 2.2rem;
+        line-height: 1.1em;
+    }
+.entry-content h1 {
+    font-size: 10px;
+    font-size: 1.0rem;
+ }
+ 
+  h2.entry-title {
+	font-size: 12px; 
+	font-size: 1.2rem; 
+ }
+ 
+ .entry-content p,
+ .entry-content ul,
+ .entry-content ol  {
+        font-size: 10px;
+        font-size: 1rem;
+    }
+    
+ .entry-content blockquote p {
+        font-size: 10px;
+        font-size: 1rem;
+        line-height: 1em;
+    }
+	
+.menu-toggle,
+.main-navigation.toggled .nav-menu {
 		display: block;
 	}
 
-	.main-navigation ul {
+.main-navigation ul {
 		display: none;
 	}
+	
+<<<<<<< HEAD
+.menu-social{
+	display: none; 
 }
 
-@media screen and (min-width: 1320px) {
-    .alignleft {
-        margin-left: -160px; 
+=======
+#social-menu{
+	display: none; 
+}
+
+>>>>>>> origin/master
+}
+	
+/* --------------- style declarations for smart-phones (orientation: portrait) ------------------ */ 
+
+@media screen and (max-width: 480px){
+
+ #masthead, #content, #colophon {
+	display: block; 
+	float: none; 
+	width: 100%; 
+	overflow: hidden; 
+}
+
+ #page {
+	width: 100%; 
+}
+
+#secondary{
+	display: none; 
+}
+
+<<<<<<< HEAD
+
+
+=======
+>>>>>>> origin/master
+ .entry-title {
+        font-size: 22px;
+        font-size: 2.2rem;
+        line-height: 1.1em;
     }
-}
 
-@media screen and (min-width: 1820px) {
-    .alignright { 
-        margin-right: -160px; 
+.entry-content h1 {
+    font-size: 10px;
+    font-size: 1rem;
+ }
+ 
+ h2.entry-title {
+	font-size: 12px; 
+	font-size: 1.2rem; 
+ }
+ 
+ .entry-content p,
+ .entry-content ul,
+ .entry-content ol  {
+        font-size: 10px;
+        font-size: 1rem;
     }
-}
-
-/* Makes header responsive as screen size reduces */
-@media screen and (max-width: 600px) {
-    .site-branding { padding: 0; }
     
-    .title-box {
-        max-width: 100%;
-        margin: 0;
-        padding: 4rem;
-        border: none;
-    }
-}
-
-/* Makes block quotes responsive as screen size reduces*/
-@media screen and (max-width: 780px) {
-    blockquote.alignleft,
-    blockquote.alignright { width: 40%; }
-}
-
-@media screen and (max-width:600px) {
-    blockquote.alignleft,
-    blockquote.alignright {
-        width: 100%;
-        padding: 1em 1.5em 0;   
-    }
-}
-
-/* Makes comments responsive as screen size reduces */
-@media screen and (max-width:600px) {    
-    .comment-list ol { margin-left: 0; }
-    
-    .comment-content ol { margin-left: 1.5em; }
-    
+<<<<<<< HEAD
     .comment-content,
     .reply { margin-left: 0; }
 }
   
+=======
+ .entry-content blockquote p {
+        font-size: 10px;
+        font-size: 1rem;
+        line-height: 1em;
+    }
+ 
+<<<<<<< HEAD
+
+
+=======
+>>>>>>> origin/master
+.menu-toggle,
+.main-navigation.toggled .nav-menu {
+		display: block;
+	}
+<<<<<<< HEAD
+	
+	.main-navigation ul {
+		display: none;
+	}
+.menu-social	
+	{
+	display: none;
+	
+	}
+
+.entry-footer a
+	{
+	font-size: 12px;
+	}
+
+.post-navigation a
+	{
+	font-size: 14px;
+	}
+
+div.entry-content
+	{
+	width: 300px;
+	}
+.entry-header
+	{
+	width: 300px;
+	}
+span.tags-links
+	{
+	font-size: 12px;
+	}	
+#img
+{
+width: 300px;
+height: 300px;
+}	
+
+
+=======
+
+.main-navigation ul {
+		display: none;
+	}
+>>>>>>> origin/master
+
+  }
+>>>>>>> origin/master

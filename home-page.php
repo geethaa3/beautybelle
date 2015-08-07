@@ -10,7 +10,7 @@ get_header(); ?>
 <div id="primary" class="content-area">
 	<div id="main" class="site-main" role="main">
 		<?php 
-			$args = array('showposts'=> 4, 'order'=>'ASC', 'cat'=> 32);
+			$args = array('showposts'=> 4, 'order'=>'ASC', 'cat'=> 27);
 			$my_query = new WP_Query($args);
 		?>
 
