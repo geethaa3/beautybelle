@@ -63,11 +63,11 @@ html {
 body {
 	
 	font-size: 12px;
-	font-family: 'Century Gothic';
-	
+	font-family: 'Century Gothic';	
 	text-align: center;
 	margin: 0;
 }
+
 
 article,
 aside,
@@ -107,169 +107,40 @@ a {
 }
 
 body.page {
-	background: #FFD9AA;
+	background: #FFF3D2;
+	/*#FFD9AA;*/
 }
 
 #content {
 	background-color: #FFF;
+	padding-bottom: 0px;
+	padding-top: 3em;
 }
 
 #page {
 	background-color: #FFF;
 	margin: 0 auto;
 	padding: 0;
-	width: 80%;
-	border: 10px solid #000;
-	text-align: left;
-	-moz-border-radius: 30px;
-	-khtml-border-radius: 30px;
-	-webkit-border-radius: 30px;
-	border-radius: 30px;
-	}
-
-#headerimg {
-	width: 770px;
-	}	
-
-a:active,
-a:hover {
-	outline: 0;
-}
-
-abbr[title] {
-	border-bottom: 1px dotted;
-}
-
-b,
-strong {
-	font-weight: bold;
-}
-
-dfn {
-	font-style: italic;
-}
-
-h1 {
-	font-size: 2em;
-	margin: 0.67em 0;
-}
-
-mark {
-	background: #ff0;
-	color: #000;
-}
-
-small {
-	font-size: 80%;
-}
-
-sub,
-sup {
-	font-size: 75%;
-	line-height: 0;
-	position: relative;
-	vertical-align: baseline;
-}
-
-sup {
-	top: -0.5em;
-}
-
-sub {
-	bottom: -0.25em;
-}
-
-img {
+	width: 81%;
 	text-align: left;
 	}
-
-#primary{
-	margin: 1em;
+#main {
+	max-width: 100%;
+	padding-bottom: 1em;
 	}
 
 #supplementary {
-margin-top: 1em;
+	margin-top: 1em;
 }
 
 .site-info {
-margin-bottom: 1em;
+	margin-bottom: 1em;
 }
 
 #headerimg {
 	width: 770px;
-	
 	}	
-#content {
-	padding-bottom: 0px;
-	}
 
-/* sidebar-content styling*/////////////////////////
-.site-content {
-    padding-bottom: 2em;
-    background-color: #FFF;
-
-}
-
-.entry-content { 
-	background-color: #FFD9AA;
-	}
-	
-.single .site-content,
-.page .site-content { 
-    background: #fff; 
-    background: hsl(0, 0%, 100%);
-}
-
-.site-content .widget-area {
-    width: 40%;
-   float: right;
-    padding: 1em;
-    background: #D46A6A;
-}
-
-.site-footer {
-    clear: both;
-    width: 100%;
-}
-
-#primary {
-	width: 70%; 
-}
-
-.content-area {
-	width: 70%; 
-	float:left; 
-}
-
-#secondary {
-	height: 600px; 
-	width: 22%;
-	margin-top: 0%; 
-	margin-bottom: 0%;
-	margin-bottom: 2em;
-    	margin-right: 1.8em;
-	background-color: #4ad8a6;
-	/*#a1b9b9
-	/*#FF6666;*/ 
-}
-
-.entry-header,
-.post-navigation,
-.entry-content,
-.entry-footer,
-.tag-links,
-.comments-area,
-.paging-navigation {
-    position: relative;
-    padding: 0 5rem;
-    margin: 0 auto;
-}
-///////////////////////////////////
-
-#headerimg {
-	width: 770px;
-	}
-	
 a:active,
 a:hover {
 	outline: 0;
@@ -299,7 +170,7 @@ mark {
 }
 
 small {
-	font-size: 80%;
+	font-size: 85%;
 }
 
 sub,
@@ -319,7 +190,6 @@ sub {
 }
 
 img {
-<<<<<<< HEAD
 	border: 0;
 }
 
@@ -386,6 +256,70 @@ input::-moz-focus-inner {
 	padding: 0;
 }
 
+svg:not(:root) {
+	overflow: hidden;
+}
+
+figure {
+	margin: 1em 40px;
+}
+
+hr {
+	box-sizing: content-box;
+	height: 0;
+}
+
+pre {
+	overflow: auto;
+}
+
+code,
+kbd,
+pre,
+samp {
+	font-family: monospace, monospace;
+	font-size: 1em;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+	color: inherit;
+	font: inherit;
+	margin: 0;
+}
+
+button {
+	overflow: visible;
+}
+
+button,
+select {
+	text-transform: none;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	-webkit-appearance: button;
+	cursor: pointer;
+}
+
+button[disabled],
+html input[disabled] {
+	cursor: default;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+
+
 input {
 	line-height: normal;
 }
@@ -445,6 +379,7 @@ th {
 .entry-title {
     margin: 0 0 2rem;
     font-weight: 900;
+	font-family: 'Architects Daughter', 'Helevetica';
     font-size: 40px;
     font-size: 4rem;
     line-height: 1.3em;
@@ -470,10 +405,14 @@ h2, h3, h4, h5, h6 {
 	font-weight: bold;
 	font-size: 18px;
     font-size: 1.8rem;
-	font-family: 'Architects Daughter';
+	font-family: 'Architects Daughter', 'Helevetica';
 	margin-left: 0.5em;
 	
 }
+
+.entry-content {
+	padding: 2em;
+	}
 
 .entry-content h1 {
     font-size: 32px;
@@ -494,10 +433,10 @@ h2, h3, h4, h5, h6 {
 }
 
 h1 {
-font-weight: bold;
-font-size: 25px;
-font-size: 2.5rem;
-font-family: 'Codystar';
+	font-weight: bold;
+	font-size: 25px;
+	font-size: 2.5rem;
+	font-family: 'Codystar';
 }
 
 p {
@@ -653,6 +592,7 @@ input[type="reset"]:hover,
 input[type="submit"]:hover {
 	
 }
+
 button:focus,
 input[type="button"]:focus,
 input[type="reset"]:focus,
@@ -664,6 +604,7 @@ input[type="submit"]:active {
 	border-color: #aaa #bbb #bbb;
 	box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
 }
+
 input[type="checkbox"],
 input[type="radio"] {
 	padding: 0; /* Addresses excess padding in IE8/9 */
@@ -705,7 +646,7 @@ input[type="email"],
 input[type="url"],
 input[type="password"],
 input[type="search"] {
-	padding: 3px;
+	padding: 4px;
 }
 textarea {
 	overflow: auto; /* Removes default vertical scrollbar in IE6/7/8/9 */
@@ -720,14 +661,27 @@ textarea {
 /*--------------------------------------------------------------
 5.1 Links
 --------------------------------------------------------------*/
+
+.nav-links a {
+	text-decoration: none;
+	font-size: 25px;
+    padding: 0.1em;
+	color: #FF6666; 
+	}
+	
+.nav-links a:hover {
+	text-decoration: underline;
+	}
+	
 a {
     text-decoration: none;	
-    color: #000; 
+    color: #FF6666; 
     text-decoration: underline;     
 }
 
+
 a:visited {
-    color: #333;
+    color: #7A1B43;
 }
 
 a:hover,
@@ -738,7 +692,7 @@ a:focus,
 
 /*--------------------------------------------------------------
 5.2 Menus
---------------------------------------------------------------*/
+--------------------------------------------------------------*/	
 .menu-social ul {
     float: right;
     text-align: center;
@@ -788,8 +742,12 @@ a:focus,
     display: block;
     clear: both;
     font-family: 'Architects Daughter';
-    text-transform: uppercase;
-    background: #A14169;
+    font-size: 20px;
+	text-transform: uppercase;
+    /*#9cd2c0
+	/*BFBFFF
+	/*#A14169*/
+	background-color: #FFC89F;
 }
 .main-navigation ul {
     list-style: none;
@@ -802,12 +760,14 @@ a:focus,
 }
 .main-navigation a {
     display: block;
-    padding: 0.5em;
-    font-size: 10px;
-    font-size: 1rem;
+    padding: 0.4em;
+    margin: 0.4em;
+	font-size: 20px;
+	font-weight: bold;
     text-decoration: none;
     line-height: 1.3em;
-    color: #EECAD9;
+    color: #FF6666;
+	/*#EECAD9;*/
 }
 .main-navigation ul ul {
     position: absolute;
@@ -816,7 +776,7 @@ a:focus,
     display: none;
     float: left;
     padding: 0;
-    background: #A14169;
+    background: #FFC89F;
 }
 .main-navigation ul ul ul {
     left: 100%;
@@ -824,17 +784,26 @@ a:focus,
 }
 .main-navigation ul ul a {
     width: 200px;
+	
 }
+
+.main-navigation ul ul a:hover {
+	background-color:#FFC89F;
+}
+
 .main-navigation ul ul li {
+	background-color: #FFC89F;
 }
 .main-navigation li:hover > a {
     color: #fff;
-    background: #EECAD9;
+    background: #FFC89F;
+	font-weight: bold; 
+	/*#EECAD9;*/
 }
 .main-navigation ul ul :hover > a {
 }
 .main-navigation ul ul a:hover {
-    background: #808080;
+    background: #FFC89F;
 }
 .main-navigation ul li:hover > ul {
     display: block;
@@ -843,7 +812,7 @@ a:focus,
 .main-navigation .current-menu-item > a,
 .main-navigation .current_page_item > a:hover,
 .main-navigation .current-menu-item > a:hover {
-    background: #B49AA5;
+    background: #4ad8a6;
     color: #7A1B43;
 }
 
@@ -854,7 +823,9 @@ a:focus,
 .main-navigation ul ul .current_page_parent,
 .main-navigation .current_page_parent .current_page_item > a {
     color: #fff;
-    background: #7A1B43;
+    background: #4ad8a6;
+	/*92897f
+	#7A1B43;*/
 } 
 .post-navigation a {
     font-size: 20px; 
@@ -877,16 +848,16 @@ a:focus,
 .comment-navigation .nav-previous,
 .paging-navigation .nav-previous,
 .post-navigation .nav-previous {
-    width: 50%;
+    width: 40%;
     float: left;
-    padding-right: 15%;
+    padding-right: 10%;
 }
 .comment-navigation .nav-next,
 .paging-navigation .nav-next,
 .post-navigation .nav-next {
-    width: 50%; 
+    width: 40%; 
     float: right;
-    padding-left: 15%;
+    padding-left: 10%;
     text-align: right;
 }
 
@@ -1056,8 +1027,9 @@ a:focus,
 .widget {
     margin: 0 0 4em;
     font-family: 'Architects Daughter', sans-serif;
-    font-size: 1.6rem;
+    font-size: 18px;
 	padding: 0.5em;
+    display: inline;
 
 }
 
@@ -1068,7 +1040,7 @@ a:focus,
 }
 
 .widget a {
-    font-family: helvetica neue; 
+    font-family: 'Century Gothic', 'helvetica neue'; 
     color: black;
     font-size: 15px;
     text-decoration: none;
@@ -1085,7 +1057,7 @@ a:focus,
     list-style-type: none;
 }
 
-.widget li { padding: 1em 0 0; }
+.widget li { padding: 1px 0 0; }
 
 .widget li ul,
 .widget li ol { margin-top: 0; }
@@ -1124,12 +1096,6 @@ div.tagcloud {
 	font-family: 'Century Gothic'; 
 }
 
-/* WordPress search bar widget in footer */ 
-aside#search-2.widget.widget_search {
-	font-size: 18px; 
-	margin-top: 8px; 
-	margin-left: 10px; 
-}
 
 
 /*--------------------------------------------------------------
@@ -1141,15 +1107,16 @@ aside#search-2.widget.widget_search {
 .entry-title {
     margin: 0 0 2rem;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 25px;
     line-height: 1.3em;
-    color: #000;
+    color: #FF6666;
     padding-top: 20px;
 }
 
 .entry-content {
 	margin-right: 0%; 
-	background-color: #FFD9AA;
+	background-color: #FFF3D2;
+	/*#FFD9AA;*/
 }
 
 .entry-content a { 
@@ -1181,26 +1148,10 @@ aside#search-2.widget.widget_search {
     line-height: 1.5em;
 }
 
-/* Content Area & Sidebar Layout Styling */ 
-
-#primary {
-	width: 75%; 
-}
-
-.content-area {
-	width: 75%; 
-}
-
-#secondary {
-	width: 20%; 
-	padding: 5px; 
-	margin-top: 0%; 
-}
-
 .archive .hentry{
 	background-color: #FFF3D2;
+	/*#FFD9AA;*/
 }
-
 /* Meta */
 .category-list {
     margin: 1.3em 0 1em;
@@ -1227,11 +1178,17 @@ aside#search-2.widget.widget_search {
 .entry-meta a { font-weight: 600; }
 
 .entry-footer {
-    margin-top: 3rem;
-    margin-bottom: 5rem;
+    margin-top: 1rem;
     font-family:  'Architects Daughter';
+	position: relative;
+    max-width: 100%;
+    font-size: 1.2rem;
     line-height: 2em;
 }
+
+.entry-footer span {
+	padding-left: 1em;
+	}
 
 .entry-footer ul {
     padding: 0;
@@ -1432,9 +1389,11 @@ object {
     padding: 0;
     font-family: 'Architects Daughter';
     font-size: 16px;
-    font-size: 1.6rem;
     color: #fff;
-    background: #7A1B43;
+    background: #4ad8a6;
+	/*#08ba7c;
+	/*#AAC0C0;*/
+	/*#7A1B43;*/
 }
 
 .site-footer a {
@@ -1443,170 +1402,270 @@ object {
 
 .site-info { 
     text-align: center;
-    font-size: 12px; 
-    color:#DFA0BB;
-    padding-bottom: 1em;
+	font-family: 'Century Gothic';
+    font-size: 14px; 
+	font-weight: bold;
+    color:#7A1B43;
+	padding-bottom: 2em;
 }
 
+.site-info a:hover {
+	color: #FF6666;
+	}
+/*------------SIDEBAR-AREA------------*/
+ .site-content {
+    padding-bottom: 2em;
+    background-color: #FFF;
+
+}
+
+.entry-content { 
+	background-color: #FFF3D2; 
+	/*#FFD9AA;*/
+	}
+	
+.single .site-content,
+.page .site-content { 
+    background: #fff; 
+    background: hsl(0, 0%, 100%);
+}
+
+.site-content .widget-area {
+    width: 40%;
+   float: right;
+    padding: 1em;
+    background: #D46A6A;
+}
+
+.site-footer {
     
+    width: 100%;
+}
+
+#primary {
+	width: 70%;
+	margin-left: 3.7em;
+}
+
+.content-area {
+	width: 70%; 
+	float:left; 
+}
+
+#secondary {
+	height: 600px; 
+	width: 22%;
+	margin-top: 0%; 
+	margin-bottom: 0%;
+	margin-bottom: 2em;
+    margin-right: 1.8em;
+	background-color: #4ad8a6;
+	/*#a1b9b9
+	/*#FF6666;*/ 
+}
+
+aside #secondary {
+	max-width: 100%;
+	}
+
+input {
+max-width: 100%;
+}
+
+.entry-header,
+.post-navigation,
+.entry-content,
+.tag-links,
+.comments-area,
+.paging-navigation {
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/**-------------SLIDER**---------------**/
+.flexslider {
+width: 600px;
+}
+
+.flexslider .slides img {
+	height: 600px;
+    }
 /*--------------------------------------------------------------
 14.0 Responsiveness 
 --------------------------------------------------------------*/
-/* The following lines ensure that the website is responsive on laptops, smartphones, and tablets.
-We have coded it specifically for 15" Macs, iPhones, and iPads, but it should work fine on all devices. */
 
 /* --------------- style declarations for smart-phones (orientation: landscape) --------------- */
 @media screen and (max-width: 640px) {
-
-#masthead, #content, #colophon {
+	#masthead, #content, #colophon {
 		display: block; 
 		width: 100%; 
 		overflow: hidden;
-	}
-		 
-#page{
+		}
+			 
+	#page{
 		width: 100%; 
-	}
-	
-#secondary {
-	display: none; 
-}
-
- .entry-title {
-        font-size: 22px;
-        font-size: 2.2rem;
-        line-height: 1.1em;
-    }
-.entry-content h1 {
-    font-size: 10px;
-    font-size: 1.0rem;
- }
- 
-  h2.entry-title {
-	font-size: 12px; 
-	font-size: 1.2rem; 
- }
- 
- .entry-content p,
- .entry-content ul,
- .entry-content ol  {
-        font-size: 10px;
-        font-size: 1rem;
-    }
-    
- .entry-content blockquote p {
-        font-size: 10px;
-        font-size: 1rem;
-        line-height: 1em;
-    }
-	
-.menu-toggle,
-.main-navigation.toggled .nav-menu {
-		display: block;
-	}
-
-.main-navigation ul {
+		}
+		
+	#secondary {
 		display: none;
 	}
 
-#social-menu .menu-social{
-	display: none; 
-}
+	.entry-title {
+		font-size: 22px;
+		font-size: 2.2rem;
+		line-height: 1.1em;
+		}
+		
+	.entry-content h1 {
+		font-size: 10px;
+		font-size: 1.0rem;
+	 }
+	 
+	h2.entry-title {
+		font-size: 12px; 
+		font-size: 1.2rem; 
+	 }
+	 
+	.entry-content p,
+	.entry-content ul,
+	.entry-content ol  {
+		font-size: 10px;
+		font-size: 1rem;
+		}
+		
+	 .entry-content blockquote p {
+		font-size: 10px;
+		font-size: 1rem;
+		line-height: 1em;
+		}
+		
+	.menu-toggle,
+	.main-navigation.toggled .nav-menu {
+		display: block;
+		}
+	
+	.menu-toggle{
+		margin-left: auto;
+		margin-right: auto;
+		}
+	
+
+	ul#primary-menu.menu.nav-menu {
+		margin-left: auto;
+		margin-right: auto;
+		}
+
+	.main-navigation ul {
+		display: none;
+		}
+		
+	.menu-social{
+		display: none; 
+	}
+
+	#social-menu{
+		display: none; 
+	}
 
 }
 	
 /* --------------- style declarations for smart-phones (orientation: portrait) ------------------ */ 
-
 @media screen and (max-width: 480px){
-
- #masthead, #content, #colophon {
-	display: block; 
-	float: none; 
-	width: 100%; 
-	overflow: hidden; 
-}
-
- #page {
-	width: 100%; 
-}
-
-#secondary{
-	display: none; 
-}
-
- .entry-title {
-        font-size: 22px;
-        font-size: 2.2rem;
-        line-height: 1.1em;
-    }
-
-.entry-content h1 {
-    font-size: 10px;
-    font-size: 1rem;
- }
- 
- h2.entry-title {
-	font-size: 12px; 
-	font-size: 1.2rem; 
- }
- 
- .entry-content p,
- .entry-content ul,
- .entry-content ol  {
-        font-size: 10px;
-        font-size: 1rem;
-    }
-    
-.comment-content,
-.reply { margin-left: 0; }
-}
-
-.entry-content blockquote p {
-        font-size: 10px;
-        font-size: 1rem;
-        line-height: 1em;
-    }
-
-.menu-toggle,
-.main-navigation.toggled .nav-menu {
-		display: block;
+	#masthead, #content, #colophon {
+		display: block; 
+		float: none; 
+		width: 100%; 
+		overflow: hidden; 
 	}
-	
+
+	#page {
+		width: 100%; 
+	}
+
+	#secondary{
+		display: none; 
+		clear: both;
+	}
+
+	.entry-title {
+		font-size: 22px;
+		font-size: 2.2rem;
+		line-height: 1.1em;
+		}
+
+	.entry-content h1 {
+		font-size: 10px;
+		font-size: 1rem;
+	 }
+	 
+	h2.entry-title {
+		font-size: 12px; 
+		font-size: 1.2rem; 
+	 }
+	 
+	.entry-content p,
+	.entry-content ul,
+	.entry-content ol  {
+		font-size: 10px;
+		font-size: 1rem;
+		}
+		
+	.entry-content blockquote p {
+		font-size: 10px;
+		font-size: 1rem;
+		line-height: 1em;
+		}
+	 
+	.menu-toggle,
+	.main-navigation.toggled .nav-menu {
+		display: block;
+		}
+
+		
 	.main-navigation ul {
 		display: none;
-	}
-.menu-social	
-	{
-	display: none;
-	
-	}
+		}
+		
+	.menu-social	
+		{
+		display: none;
+		
+		}
 
-.entry-footer a
-	{
-	font-size: 12px;
-	}
+	.entry-footer a
+		{
+		font-size: 12px;
+		}
 
-.post-navigation a
-	{
-	font-size: 14px;
-	}
+	.post-navigation a
+		{
+		font-size: 14px;
+		}
 
-div.entry-content
+	div.entry-content
+		{
+		width: 300px;
+		}
+		
+	.entry-header
+		{
+		width: 300px;
+		}
+		
+	span.tags-links{
+		font-size: 12px;
+		}	
+		
+	#img
 	{
-	width: 300px;
-	}
-.entry-header
-	{
-	width: 300px;
-	}
-span.tags-links
-	{
-	font-size: 12px;
+		width: 300px;
+		height: 300px;
 	}	
-#img
-{
-width: 300px;
-height: 300px;
-}	
 
-  }
+	.main-navigation ul {
+		display: none;
+		}
+
+}
+  
