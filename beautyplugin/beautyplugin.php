@@ -3,7 +3,7 @@
 * Plugin Name: BeautyBelle Testimonials Plugin 
 * Plugin URI: http://google.com 
 * Description: A Plugin Template for Custom Testimonials
-* Author: Sara Abu Allan, Dilpreet Singh, and Geethaa Velauthampillai
+* Author: Sara Abu Allan, Dilpreet, and Geetha
 * Version: 1.0 
 * Author URI: http://google.com 
 */
@@ -36,7 +36,7 @@ add_action( 'wp_enqueue_scripts', 'testimonials_script' );
 1.2 Plugin Set Up Here
 --------------------------------------------------------------*/
 /**
- * The following function redirects testimonials archive page to page template
+ * Redirect testimonials archive page to page template
  *
  * This functions is attached to the 'template_redirect' action hook.
  */
@@ -82,7 +82,10 @@ function testimonials_post_type() {
 		'register_meta_box_cb' => 'testimonials_meta_boxes',
 	) );
 }
-
+ 
+/*--------------------------------------------------------------
+1.2 Plugin Set Up Here
+--------------------------------------------------------------*/ 
 /**
  * Adding the necessary metabox
  *
