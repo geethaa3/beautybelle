@@ -78,9 +78,17 @@ function testimonials_post_type() {
 		'has_archive' => true,
 		'hierarchical' => false,
 		'menu_position' => 10,
-		'supports' => array( 'editor' ),
+		'supports' => array( 'editor', 'thumbnail'), //added thumbnail so that it shows in backend as an option
 		'register_meta_box_cb' => 'testimonials_meta_boxes',
 	) );
+	
+	// adjusting thumbnail sizing
+	function plugin_setup() {
+		add_theme_support( 'post-thumbnails' );
+		set_post_thumbnail_size( 150, 150, true ); // default Post Thumbnail dimensions (cropped)
+}		
+
+	add_action( 'after_setup_theme', 'plugin_setup' ); //tells it to load later
 }
  
 /*--------------------------------------------------------------
@@ -266,6 +274,10 @@ function get_testimonial( $posts_per_page = 1, $orderby = 'none', $testimonial_i
 			$testimonials .= '</aside>';
 			?>
 			<?php
+			//outputs thumbnail image for testimonials
+			$testimonials .= '<div class= "testimonial-image">';
+				the_post_thumbnail('thumbnail');
+			$testimonials .= '</div>';
 		endwhile;
 	$testimonials .='</div>';
 		wp_reset_postdata();
