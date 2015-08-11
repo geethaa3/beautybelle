@@ -169,7 +169,9 @@ function testimonials_save_post( $post_id ) {
 		delete_post_meta( $post_id, '_testimonial' );
 	}
 }
-
+/*--------------------------------------------------------------
+1.5 Editing Testimonials
+--------------------------------------------------------------*/ 
 add_filter( 'manage_edit-testimonials_columns', 'testimonials_edit_columns' );
 /**
  * Modifying the list view columns
