@@ -219,7 +219,9 @@ function testimonials_columns( $column, $post_id ) {
 			break;
 	}
 }
-
+/*--------------------------------------------------------------
+1.6 Testimonials Display
+--------------------------------------------------------------*/ 
 /**
  * Display a testimonial
  *
@@ -228,6 +230,7 @@ function testimonials_columns( $column, $post_id ) {
  * @param	array $testimonial_id  The ID or IDs of the testimonial(s), comma separated
  *
  * @return	string  Formatted HTML
+ * The backend user can choose how many posts to display on the front end.
  */
 function get_testimonial( $posts_per_page = 1, $orderby = 'none', $testimonial_id = null ) {
 	$args = array(
