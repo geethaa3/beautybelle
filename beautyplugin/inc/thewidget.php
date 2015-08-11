@@ -3,14 +3,14 @@
  * Beauty Testimonials Widget
  */
  
-//Creates the Widget
+//Creates the widget
 class Testimonials_Widget extends WP_Widget {
-	//Initializing the widget or constructing it
+	//The following constructs or initializes the widget 
 	public function __construct() {
 		$widget_ops = array('classname' => 'testimonials_widget', 'description' => __( 'A display of your clients testimonials') ); 
 		parent::__construct('testimonials_widget', __('Client Testimonials', 'codediva'), $widget_ops);
 		}
-			//Declare what content the widget displays on the front end
+			//This declares the content that will be displayed in the widget
 			public function widget( $args, $instance ) {
 				extract ($args);
 				$title = apply_filters('widget_title', empty ($instance['title']) ? __('Client Testimonials', 'codediva') : $instance['title'], $instance, $this->id_base); 
@@ -29,7 +29,7 @@ class Testimonials_Widget extends WP_Widget {
 				echo $args['after_widget']; 
 				}
 				
-			//widget update to save widget data during edition
+			//Widget can be updated to save the new data when it's been edited
 			public function update( $new_instance, $old_instance ) {
 				$instance = $old_instance;
 				$instance['title'] = strip_tags( $new_instance['title'] );
@@ -40,7 +40,7 @@ class Testimonials_Widget extends WP_Widget {
 				return $instance;
 				}
 				
-			//widget form creation to create the widget form in the administration
+			//The following creates a widget form creation to create a form in the admin area
 			public function form( $instance ) {
 				$instance = wp_parse_args( (array) $instance, array(
 				'title' => '', 'posts_per_page' => '1', 'orderby' => 'none', 'testimonial_id' => null ) );
@@ -77,9 +77,9 @@ class Testimonials_Widget extends WP_Widget {
 				}
 			
 				
-} // Closes the function we opened in step 1
+} // Closes the function that was opened in step one
 
-	// Tells WordPress that this widget has been created and that it should display in the list of available widgets.
+	// The following tells WordPress that a widget has been created and that it should display in the list of available widgets.
 	add_action ( 'widgets_init', function(){
 		register_widget( 'Testimonials_Widget' );
 		
