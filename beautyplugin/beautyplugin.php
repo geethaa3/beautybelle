@@ -84,12 +84,12 @@ function testimonials_post_type() {
 }
  
 /*--------------------------------------------------------------
-1.2 Plugin Set Up Here
+1.3 Metabox
 --------------------------------------------------------------*/ 
 /**
- * Adding the necessary metabox
+ * Adding the necessary metabox for the plugin.
  *
- * This functions is attached to the 'testimonials_post_type()' meta box callback.
+ * This functions is attached to the 'testimonials_post_type()' meta box.
  */
 function testimonials_meta_boxes() {
 	add_meta_box( 'testimonials_form', 'Testimonial Details', 'testimonials_form', 'testimonials', 'normal', 'high' );
@@ -109,6 +109,7 @@ function testimonials_form() {
 
 	wp_nonce_field( 'testimonials', 'testimonials' );
 	?>
+<!--The testimonials will display the following information on the front-end of WordPress-->	
 	<p>
 		<label>Client's Name</label><br />
 		<input type="text" value="<?php echo $client_name; ?>" name="testimonial[client_name]" size="40" />
@@ -123,12 +124,14 @@ function testimonials_form() {
 	</p>
 	<?php
 }
-
+/*--------------------------------------------------------------
+1.4 Save Posts
+--------------------------------------------------------------*/ 
 add_action( 'save_post', 'testimonials_save_post' );
 /**
- * Data validation and saving
- *
- * This functions is attached to the 'save_post' action hook.
+ * The following will validate the testimonails and save it to WordPress.
+ * Posts can be edited and as the option of editing the whole page as well.
+ * This function is attached to the 'save_post' action hook.
  */
 function testimonials_save_post( $post_id ) {
 	if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE )
