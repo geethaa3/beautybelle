@@ -11,7 +11,8 @@ get_header(); ?>
 			<header class="archive-header">
 				<h1 class="archive-title">Testimonials</h1>
 			</header><!-- #archive-header -->
-
+			
+			<!-- This is a loop displaying the testimonial data --> 
 			<?php while ( have_posts() ) : the_post();
 				$testimonial_data = get_post_meta( get_the_ID(), '_testimonial', true );
 				$client_name = ( empty( $testimonial_data['client_name'] ) ) ? '' : $testimonial_data['client_name'];
