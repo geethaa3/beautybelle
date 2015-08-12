@@ -54,7 +54,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Normalize
 --------------------------------------------------------------*/
 html {
-	font-family: sans-serif;
+	font-family: 'sans-serif';
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust:     100%;
 }
@@ -685,7 +685,7 @@ a:visited {
 }
 
 a:hover,
-a:focus,
+a:focus
  { 
     text-decoration: none; 
 }
@@ -1087,7 +1087,7 @@ a:focus,
 .footer-widgets .widget {
     float: left;
     width: 320px;
-    margin: 0 4rem 8rem 4rem;
+    margin: 0 1em 2em 1em;
 }
 
 /* Tag cloud widget*/
@@ -1277,12 +1277,12 @@ div #comments
 .blog .format-aside .entry-title,
 .archive .format-aside .entry-title {
 	display: none;
+	}
 	
-	.format-aside .entry-content {
+.format-aside .entry-content {
     margin-top: 1em;
 }
   
-}
 
 /*--------------------------------------------------------------
 ## Comments
@@ -1485,12 +1485,13 @@ max-width: 100%;
 
 /**-------------SLIDER**---------------**/
 .flexslider {
-width: 600px;
+	width: 600px;
 }
 
 .flexslider .slides img {
 	height: 600px;
     }
+	
 /*--------------------------------------------------------------
 14.0 Responsiveness 
 --------------------------------------------------------------*/
@@ -1662,10 +1663,6 @@ width: 600px;
 		width: 300px;
 		height: 300px;
 	}	
-
-	.main-navigation ul {
-		display: none;
-		}
 
 }
   
