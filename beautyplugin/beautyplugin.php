@@ -285,37 +285,3 @@ function get_testimonial( $posts_per_page = 1, $orderby = 'none', $testimonial_i
 
 	return $testimonials;
 }
-
-
-//tried to add featured image using this piece of code but itsnot working
-/*function plugin_setup() {
-		add_action( 'init', 'plugin_setup' );
-set_post_thumbnail_size( 150, 150, true ); // default Post Thumbnail dimensions (cropped)
-}		
-
-if ( plugin_setup( 'add_theme_support' ) ) { 
-add_theme_support( 'post-thumbnails' );
-
-}
-*/
-
-
-//add_shortcode( 'testimonial', 'testimonial_shortcode' );
-
-/**
- * Shortcode to display testimonials
- *
- * This functions is attached to the 'testimonial' action hook.
- *
- * [testimonial posts_per_page="1" orderby="none" testimonial_id=""]
- *
-function testimonial_shortcode( $atts ) {
-	extract( shortcode_atts( array(
-		'posts_per_page' => '1',
-		'orderby' => 'none',
-		'testimonial_id' => '',
-	), $atts ) );
-
-	return get_testimonial( $posts_per_page, $orderby, $testimonial_id );
-}
-*/
